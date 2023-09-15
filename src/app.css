@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-div {
-  height: 100vh;
-  height: 100dvh;
-}
-
 body {
   font-family: 'Poppins', sans-serif;
+}
+
+.screen-height {
+  height: 100dvh;
+  height: 100vh;
 }
