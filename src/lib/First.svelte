@@ -17,7 +17,7 @@
 
 <div class="flex flex-col gap-6 items-center">
   {#if animate}
-    <h1 in:fly={{y:-10, duration: 1000}} class="absolute -translate-y-[120%] text-5xl sm:text-[5rem] text-dark font-extrabold">
+    <h1 in:fly={{y:-10, duration: 1000}} class="text-5xl sm:text-[5rem] text-dark font-extrabold">
       Hi! <span class="text-primary">:D</span>
     </h1>
     <div class="flex flex-col gap-1">
@@ -28,7 +28,7 @@
         Other names: Hajik, Hajiq, Haziq, Hazik, Ojin, wait what.
       </p>
     </div>
-    <div class="w-full flex gap-1 justify-around">
+    <div class="w-full flex gap-1 justify-around py-2">
       <div in:fly={{x:-10, duration: 1000, delay: 400}}>
         <IconSocial
         social={BsGithub}
