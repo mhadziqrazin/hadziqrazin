@@ -37,7 +37,7 @@
     />
     <IconSocial
       social={SiGmail}
-      title={"Instagram"}
+      title={"Mail"}
       link={"mailto:mhadziqrazin@gmail.com"}
     />
   </div>
