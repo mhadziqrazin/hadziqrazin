@@ -6,8 +6,8 @@
   import BsInstagram from "svelte-icons-pack/bs/BsInstagram"
   import SiGmail from "svelte-icons-pack/si/SiGmail"
 
-  import {onMount} from "svelte"
-    import { fade, fly } from "svelte/transition"
+  import { onMount } from "svelte"
+  import { fly } from "svelte/transition"
 
   let animate = false
   onMount(() => {
