@@ -15,41 +15,41 @@
   })
 </script>
 
-<section class="flex flex-col md:w-1/2 gap-2 md:gap-6 items-center justify-center">
+<section class="flex flex-col md:w-1/2 gap-2 lg:gap-6 items-center justify-center">
   {#if animate}
-    <h1 in:fly={{y:-10, duration: 1000}} class="text-4xl md:text-[4rem] text-dark font-extrabold">
+    <h1 in:fly={{y:-10, duration: 1000}} class="text-4xl lg:text-[4rem] text-dark font-extrabold">
       Hi! <span class="text-primary">:D</span>
     </h1>
-
+    
     <h3 in:fly={{y:-10, duration: 1000, delay: 200}} class="text-4xl text-dark/90 font-semibold">
     </h3>
     
     
-    <p in:fade={{duration: 1000, delay: 200}} class="text-lg md:text-3xl font-semibold text-dark/70">
-      <span class="text-dark/90">Muhammad <span class="font-bold text-secondary">Hadziq</span> Razin</span>,
-      
-      an undergraduate
-      
-      <a href="https://cs.ui.ac.id" target="_blank" class="underline decoration-[3px]">
-        computer science
-      </a>
-      
-      student at
-      
-        <a href="https://ui.ac.id" target="_blank" class="underline decoration-[3px]">
-        University of Indonesia,
-      </a>
+    <div class="flex flex-col gap-4 md:gap-6">
+      <p in:fade={{duration: 1000, delay: 200}} class="text-lg lg:text-3xl font-semibold text-dark/70">
+        <span class="text-dark/90">Muhammad <span class="font-bold text-secondary">Hadziq</span> Razin</span>,
+        
+        an undergraduate
+        
+        <a href="https://cs.ui.ac.id" target="_blank" class="underline decoration-[3px]">
+          computer science
+        </a>
+        
+        student at
+        
+          <a href="https://ui.ac.id" target="_blank" class="underline decoration-[3px]">
+          University of Indonesia,
+        </a>
 
-      who&apos;s passionate in
-      <span class="text-dark/90">software engineering</span>.
-    </p>
+        who&apos;s passionate in
+        <span class="text-dark/90">software engineering</span>.
+      </p>
     
-    <div class="flex flex-col gap-6">
-      <p in:fly={{y:-5, duration: 1000, delay: 400}} class="text-[0.65rem] text-dark/50 font-light">
+      <p in:fly={{y:-5, duration: 1000, delay: 400}} class="text-[0.65rem] lg:text-sm text-dark/50 font-light">
         Other names: Hajik, Hajiq, Haziq, Hazik, Ojin, wait what.
       </p>
       
-      <div class="w-full flex gap-1 justify-around py-2">
+      <div class="w-1/2 flex self-center justify-around md:py-10">
         <div in:fly={{x:-10, duration: 1000, delay: 400}}>
           <IconSocial
             social={BsGithub}
