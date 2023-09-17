@@ -23,7 +23,7 @@
 
     <div class="flex flex-col gap-1">
       <h3 in:fly={{y:-10, duration: 1000, delay: 200}} class="text-lg sm:text-2xl text-center text-dark/80 font-normal">
-        <span class="font-light">I am</span> Muhammad <span class="font-bold text-secondary">Hadziq</span> Razin
+        <span class="font-light">I&apos;m</span> Muhammad <span class="font-bold text-secondary">Hadziq</span> Razin
       </h3>
       
       <p in:fly={{y:-10, duration: 1000, delay: 400}} class="text-[0.65rem] sm:text-sm text-center text-dark/50 font-light">
