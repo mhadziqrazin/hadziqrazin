@@ -31,13 +31,13 @@
         
         an undergraduate
         
-        <a href="https://cs.ui.ac.id" target="_blank" class="underline decoration-[3px]">
+        <a href="https://cs.ui.ac.id" target="_blank" class="underline decoration-2 md:decoration-[3px]">
           computer science
         </a>
         
         student at
         
-          <a href="https://ui.ac.id" target="_blank" class="underline decoration-[3px]">
+          <a href="https://ui.ac.id" target="_blank" class="underline decoration-2 md:decoration-[3px]">
           University of Indonesia,
         </a>
 
