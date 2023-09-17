@@ -2,6 +2,6 @@
   import First from '$lib/First.svelte'
 </script>
 
-<div class="screen-height flex items-center justify-center transition-all duration-300 ease-out">
+<div class="flex flex-col items-center">
   <First />
 </div>
