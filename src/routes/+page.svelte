@@ -1,5 +1,5 @@
 <script>
-  import First from '$lib/First.svelte'
+  import First from '$lib/sections/First.svelte'
 </script>
 
 <div class="flex flex-col items-center">

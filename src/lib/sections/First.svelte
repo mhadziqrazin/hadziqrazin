@@ -1,5 +1,5 @@
 <script lang="ts">
-  import IconSocial from "./components/IconSocial.svelte"
+  import IconSocial from "../components/IconSocial.svelte"
 
   import BsGithub from "svelte-icons-pack/bs/BsGithub"
   import BsLinkedin from "svelte-icons-pack/bs/BsLinkedin"
@@ -15,7 +15,7 @@
   })
 </script>
 
-<div class="screen-height flex flex-col gap-6 items-center justify-center">
+<section class="screen-height flex flex-col gap-6 items-center justify-center">
   {#if animate}
     <h1 in:fly={{y:-10, duration: 1000}} class="text-5xl sm:text-[5rem] text-dark font-extrabold">
       Hi! <span class="text-primary">:D</span>
@@ -62,4 +62,4 @@
       </div>
     </div>
   {/if}
-</div>
+</section>
