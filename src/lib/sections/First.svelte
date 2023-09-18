@@ -19,11 +19,7 @@
   {#if animate}
     <h1 in:fly={{y:-10, duration: 1000}} class="text-4xl lg:text-[4rem] text-dark font-extrabold">
       Hi! <span class="text-primary">:D</span>
-    </h1>
-    
-    <h3 in:fly={{y:-10, duration: 1000, delay: 200}} class="text-4xl text-dark/90 font-semibold">
-    </h3>
-    
+    </h1>    
     
     <div class="flex flex-col gap-4 md:gap-6">
       <div class="flex flex-col gap-1 md:gap-3">
