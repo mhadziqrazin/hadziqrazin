@@ -22,26 +22,34 @@
     </h1>
     
     <div class="flex flex-col gap-1 lg:gap-3">
-      <p in:fade={{duration: 1000, delay: 200}} class="text-lg lg:text-3xl font-semibold text-dark/70">
-        <span class="text-dark/90">Muhammad <span class="font-bold text-secondary">Hadziq</span> Razin</span>,
+      <!-- NAME -->
+      <p in:fade={{duration: 1000, delay: 200}} class="text-lg lg:text-3xl font-medium text-dark/90">
+        Mu&centerdot;ham&centerdot;mad <span class="font-bold">Ha&centerdot;dziq</span> Ra&centerdot;zin <span class="text-dark/40">/&apos;h&#593;z&#618;k/</span>
+      </p>
+
+      <!-- OTHER NAMES -->
+      <p in:fly={{y:-5, duration: 1000, delay: 400}} class="text-[0.65rem] lg:text-sm text-dark/50 font-light">
+        Other names: Hajik, Hajiq, Haziq, Hazik, Ojin, wait what.
+      </p>
+
+      <!-- DESCRIPTION -->
+      <p in:fade={{duration: 1000, delay: 200}} class="text-base lg:text-2xl font-medium text-dark/70">
       
-        an undergraduate
-      
+        &bullet;an undergraduate
+
         <a href="https://cs.ui.ac.id" target="_blank" class="underline decoration-2 md:decoration-[3px]">
           computer science
         </a>
       
-        student at
+        student at the
       
           <a href="https://ui.ac.id" target="_blank" class="underline decoration-2 md:decoration-[3px]">
           University of Indonesia,
         </a>
-        who&apos;s passionate in
+        who&apos;s passionate about
         <span class="text-dark/90">software engineering</span>.
       </p>
-      <p in:fly={{y:-5, duration: 1000, delay: 400}} class="text-[0.65rem] lg:text-sm text-dark/50 font-light">
-        Other names: Hajik, Hajiq, Haziq, Hazik, Ojin, wait what.
-      </p>
+      
     </div>
     
     <div class="w-1/2 flex self-center justify-around">
