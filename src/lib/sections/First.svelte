@@ -17,7 +17,7 @@
 
 <section class="flex flex-col md:w-1/2 gap-4 lg:gap-10 items-center justify-center">
   {#if animate}
-    <h1 in:fly={{y:-10, duration: 1000}} class="text-4xl lg:text-[4rem] text-dark font-extrabold">
+    <h1 in:fly={{y:20, duration: 1000}} class="text-4xl lg:text-[4rem] text-dark font-extrabold">
       Hi! <span class="text-primary">:D</span>
     </h1>
     
@@ -28,7 +28,7 @@
       </p>
 
       <!-- OTHER NAMES -->
-      <p in:fly={{y:-5, duration: 1000, delay: 400}} class="text-[0.65rem] lg:text-sm text-dark/50 font-light">
+      <p in:fly={{y:-5, duration: 1000, delay: 600}} class="text-[0.65rem] lg:text-sm text-dark/50 font-light">
         Other names: Hajik, Hajiq, Haziq, Hazik, Ojin, wait what.
       </p>
 
