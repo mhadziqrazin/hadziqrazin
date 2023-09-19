@@ -28,12 +28,12 @@
       </p>
 
       <!-- OTHER NAMES -->
-      <p in:fly={{y:-5, duration: 1000, delay: 600}} class="text-[0.65rem] lg:text-sm text-dark/50 font-light">
+      <p in:fly={{y:-5, duration: 1000, delay: 600}} class="text-[0.65rem] lg:text-sm text-dark/60 font-light">
         Other names: Hajik, Hajiq, Haziq, Hazik, Ojin, wait what.
       </p>
 
       <!-- DESCRIPTION -->
-      <p in:fade={{duration: 1000, delay: 200}} class="text-base lg:text-2xl font-medium text-dark/70">
+      <p in:fade={{duration: 1000, delay: 200}} class="text-base lg:text-2xl font-medium text-dark/80">
       
         &bullet;an undergraduate
 
@@ -47,7 +47,7 @@
           University of Indonesia,
         </a>
         who&apos;s passionate about
-        <span class="text-dark/90">software engineering</span>.
+        <span class="text-dark font-semibold">software engineering</span>.
       </p>
       
     </div>
