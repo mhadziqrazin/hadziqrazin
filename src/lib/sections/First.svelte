@@ -49,6 +49,10 @@
         who&apos;s passionate about
         <span class="text-dark font-semibold">software engineering</span>.
       </p>
+
+      <p in:fade={{duration: 1000, delay: 400}} class="text-dark/60">
+        See: <a href="/projects" class="w-full underline hover:text-dark/90 transition-all duration-200">Projects</a>
+      </p>
     </div>
 
     <div class="w-1/2 flex self-center justify-around">
