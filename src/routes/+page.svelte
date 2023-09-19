@@ -52,7 +52,7 @@
 
       <!-- PROJECTS -->
       <p in:fade={{duration: 1000, delay: 400}} class="text-dark/60 text-xs lg:text-base">
-        See: <a href="/projects" class="w-full underline hover:text-dark/90 transition-all duration-200">Projects</a>
+        See: <a href="/projects" class="w-full underline text-secondary/70 hover:text-secondary/90 transition-all duration-200">Projects</a>
       </p>
     </div>
 
