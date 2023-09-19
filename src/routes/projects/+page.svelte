@@ -1,8 +1,8 @@
 <script lang="ts">
-    import { onMount } from "svelte"
+  import { onMount } from "svelte"
   import Icon from "svelte-icons-pack"
   import FaSolidHammer from "svelte-icons-pack/fa/FaSolidHammer"
-    import { fade } from "svelte/transition"
+  import { fade } from "svelte/transition"
 
   let animate = false
   onMount(() => {
