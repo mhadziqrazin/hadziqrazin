@@ -15,7 +15,7 @@
   })
 </script>
 
-{#if animate}
+{#key animate}
   <section class="flex flex-col md:w-1/2 gap-4 lg:gap-10 items-center justify-center">
     <h1 in:fly={{y:20, duration: 1000}} class="text-4xl lg:text-[4rem] text-dark font-extrabold">
       Hi! <span class="text-primary">:D</span>
@@ -87,4 +87,4 @@
       </div>
     </div>
   </section>
-{/if}
+{/key}
