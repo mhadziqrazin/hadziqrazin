@@ -50,7 +50,8 @@
         <span class="text-dark font-semibold">software engineering</span>.
       </p>
 
-      <p in:fade={{duration: 1000, delay: 400}} class="text-dark/60">
+      <!-- PROJECTS -->
+      <p in:fade={{duration: 1000, delay: 400}} class="text-dark/60 text-xs lg:text-base">
         See: <a href="/projects" class="w-full underline hover:text-dark/90 transition-all duration-200">Projects</a>
       </p>
     </div>
