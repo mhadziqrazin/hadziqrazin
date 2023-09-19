@@ -20,7 +20,7 @@
     <h1 in:fly={{y:20, duration: 1000}} class="text-4xl lg:text-[4rem] text-dark font-extrabold">
       Hi! <span class="text-primary">:D</span>
     </h1>
-    
+
     <div class="flex flex-col gap-1 lg:gap-3">
       <!-- NAME -->
       <p in:fade={{duration: 1000, delay: 200}} class="text-lg lg:text-3xl font-medium text-dark/90">
@@ -34,24 +34,23 @@
 
       <!-- DESCRIPTION -->
       <p in:fade={{duration: 1000, delay: 200}} class="text-base lg:text-2xl font-medium text-dark/80">
-      
+
         &bullet;an undergraduate
 
         <a href="https://cs.ui.ac.id" target="_blank" class="underline decoration-2 md:decoration-[3px]">
           computer science
         </a>
-      
+
         student at the
-      
-          <a href="https://ui.ac.id" target="_blank" class="underline decoration-2 md:decoration-[3px]">
-          University of Indonesia,
-        </a>
+
+        <a href="https://ui.ac.id" target="_blank" class="underline decoration-2 md:decoration-[3px]">
+          University of Indonesia</a>,
+
         who&apos;s passionate about
         <span class="text-dark font-semibold">software engineering</span>.
       </p>
-      
     </div>
-    
+
     <div class="w-1/2 flex self-center justify-around">
       <div in:fly={{x:-10, duration: 1000, delay: 400}}>
         <IconSocial
