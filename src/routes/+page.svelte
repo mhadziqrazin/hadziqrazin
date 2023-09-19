@@ -15,8 +15,8 @@
   })
 </script>
 
-<section class="flex flex-col md:w-1/2 gap-4 lg:gap-10 items-center justify-center">
-  {#if animate}
+{#if animate}
+  <section class="flex flex-col md:w-1/2 gap-4 lg:gap-10 items-center justify-center">
     <h1 in:fly={{y:20, duration: 1000}} class="text-4xl lg:text-[4rem] text-dark font-extrabold">
       Hi! <span class="text-primary">:D</span>
     </h1>
@@ -28,7 +28,7 @@
       </p>
 
       <!-- OTHER NAMES -->
-      <p in:fly={{y:-5, duration: 1000, delay: 600}} class="text-[0.65rem] lg:text-sm text-dark/60 font-light">
+      <p in:fly={{y:-5, duration: 1000, delay: 400}} class="text-[0.65rem] lg:text-sm text-dark/60 font-light">
         Other names: Hajik, Hajiq, Haziq, Hazik, Ojin, wait what.
       </p>
 
@@ -51,7 +51,7 @@
       </p>
 
       <!-- PROJECTS -->
-      <p in:fade={{duration: 1000, delay: 400}} class="text-dark/60 text-xs lg:text-base">
+      <p in:fade={{duration: 1000, delay: 600}} class="text-dark/60 text-xs lg:text-base">
         See: <a href="/projects" class="w-full underline text-secondary/70 hover:text-secondary/90 transition-all duration-200">Projects</a>
       </p>
     </div>
@@ -64,21 +64,21 @@
           link={"https://github.com/mhadziqrazin"}
         />
       </div>
-      <div in:fly={{x:-10, duration: 1000, delay: 550}}>
+      <div in:fly={{x:-10, duration: 1000, delay: 500}}>
         <IconSocial
           social={BsLinkedin}
           title={"Linkedin"}
           link={"https://www.linkedin.com/in/mhadziqrazin/"}
         />
       </div>
-      <div in:fly={{x:-10, duration: 1000, delay: 700}}>
+      <div in:fly={{x:-10, duration: 1000, delay: 600}}>
         <IconSocial
           social={BsInstagram}
           title={"Instagram"}
           link={"https://www.instagram.com/hadziqrazin/"}
         />
       </div>
-      <div in:fly={{x:-10, duration: 1000, delay: 950}}>
+      <div in:fly={{x:-10, duration: 1000, delay: 700}}>
         <IconSocial
           social={SiGmail}
           title={"Mail"}
@@ -86,5 +86,5 @@
         />
       </div>
     </div>
-  {/if}
-</section>
+  </section>
+{/if}
