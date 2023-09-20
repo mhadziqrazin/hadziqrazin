@@ -24,7 +24,7 @@
 </svelte:head>
 
 {#key animate}
-  <section class={`${animate ? 'opacity-100' : 'opacity-0'} flex flex-col md:w-1/2 gap-4 lg:gap-10 items-center justify-center`}>
+  <section class={`${animate ? 'opacity-100' : 'opacity-0'} screen-height flex flex-col md:w-1/2 gap-4 lg:gap-10 items-center justify-center`}>
     <h1 in:fly={{y:20, duration: 1000}} class="text-4xl lg:text-[4rem] text-dark font-extrabold">
       Hi! <span class="text-primary">:D</span>
     </h1>
