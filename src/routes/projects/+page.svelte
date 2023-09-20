@@ -24,7 +24,7 @@
     Page under development
   </h1>
   <p class="text-xl text-center">
-    I&apos;m working on it. I swear.
+    I'm working on it. I swear.
   </p>
   <a href="/" class="underline">Back</a>
 </section>
