@@ -1,5 +1,7 @@
 <script lang="ts">
   import { fade } from "svelte/transition"
+  import typeScript from "$lib/constants/techs/typeScript";
+  
 </script>
 
 <svelte:head>
@@ -14,4 +16,10 @@
   <h1 class="title text-5xl font-semibold w-full">
     Projects
   </h1>
+  <div>
+    <img src={typeScript.img} alt="TypeScript" class="w-[100px] aspect-square">
+    <a href={typeScript.url} target="_blank">
+      {typeScript.name}
+    </a>
+  </div>
 </section>
