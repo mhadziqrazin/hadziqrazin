@@ -8,6 +8,6 @@ export interface Project {
 export interface Tech {
   name: string
   color: string
-  logo: string
+  img: string
   url: string
 }
