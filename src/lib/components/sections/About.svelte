@@ -37,11 +37,6 @@
       who's passionate about
       <span class="text-dark font-semibold">software engineering</span>.
     </p>
-  
-    <!-- PROJECTS -->
-    <p in:fade={{duration: 1000, delay: 600}} class="text-dark/60 text-xs lg:text-base">
-      See: <a href="/projects" class="w-full underline text-secondary/70 hover:text-secondary/90 transition-all duration-200">Projects</a>
-    </p>
   </div>
   
   <!-- SOCIAL LINKS -->
