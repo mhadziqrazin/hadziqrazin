@@ -1,7 +1,7 @@
 <script lang="ts">
   import { fade } from "svelte/transition"
-  import typeScript from "$lib/constants/techs/typeScript";
-  
+  import toDo from "$lib/constants/projects/toDo";
+  import Project from "$lib/components/Project.svelte"
 </script>
 
 <svelte:head>
@@ -13,13 +13,11 @@
 </svelte:head>
 
 <section in:fade={{duration: 300}} class="screen-height flex flex-col gap-10 justify-center items-center">
-  <h1 class="title text-5xl font-semibold w-full">
+  <h1 class="title text-5xl font-semibold">
     Projects
   </h1>
-  <div>
-    <img src={typeScript.img} alt="TypeScript" class="w-[100px] aspect-square">
-    <a href={typeScript.url} target="_blank">
-      {typeScript.name}
-    </a>
+  <div class="flex flex-wrap gap-x-20 justify-center">
+    <Project project={toDo}/>
+    <Project project={toDo}/>
   </div>
 </section>
