@@ -7,11 +7,7 @@
   onMount(() => {
     animate = true
   })
-
-  let y: number
 </script>
-
-<svelte:window bind:scrollY={y} />
 
 <svelte:head>
   <title>Hadziq Razin</title>
@@ -24,10 +20,8 @@
 {#key animate}
   <section class={`${animate ? 'opacity-100' : 'opacity-0'} flex flex-col items-center`}>
     <About />
-    {y}
-    <Projects {y} />
+    <Projects />
     
-    <About />
     <div class="py-8">
       <p class="text-[0.5rem] lg:text-base font-light text-dark/80">
         Created by <span class="font-semibold">Muhammad Hadziq Razin</span> &copy; 2023. All Rights Reserved.
