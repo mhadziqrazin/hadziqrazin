@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte"
   import About from "$lib/components/sections/About.svelte"
+  import Projects from "$lib/components/sections/Projects.svelte"
 
   let animate = false
   onMount(() => {
@@ -17,7 +18,13 @@
 </svelte:head>
 
 {#key animate}
-  <section class={`${animate ? 'opacity-100' : 'opacity-0'} screen-height flex flex-col md:w-1/2 gap-4 lg:gap-10 items-center justify-center`}>
+  <section class={`${animate ? 'opacity-100' : 'opacity-0'} flex flex-col items-center`}>
     <About />
+    <Projects />
+    <div class="pb-8">
+      <p class="text-[0.5rem] lg:text-base font-light text-dark/80">
+        Created by <span class="font-semibold">Muhammad Hadziq Razin</span> &copy; 2023. All Rights Reserved.
+      </p>
+    </div>
   </section>
 {/key}
