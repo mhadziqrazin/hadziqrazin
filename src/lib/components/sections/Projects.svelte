@@ -9,7 +9,7 @@
 
 <svelte:window bind:scrollY={y} />
 
-<section bind:this={section} class="screen-height  w-[100vw] flex flex-col items-center">
+<section bind:this={section} class="min-h-screen  w-[100vw] flex flex-col items-center">
 
   <div class="relative w-[1500px] -translate-x-1/4 md:-translate-x-[200px] lg:translate-x-0 h-full flex justify-center">
     {#each layers as layer}

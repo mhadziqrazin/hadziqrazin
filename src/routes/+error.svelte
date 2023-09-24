@@ -9,7 +9,7 @@
     })
 </script>
 
-<div class="screen-height flex flex-col justify-center items-center">
+<div class="min-h-screen flex flex-col justify-center items-center">
   {#if animate}
     <h1 in:fade={{duration: 1000}} class="text-lg font-medium text-dark/60">
       {$page.status} | {$page.error?.message}
