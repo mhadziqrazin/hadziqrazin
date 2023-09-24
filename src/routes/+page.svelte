@@ -18,7 +18,7 @@
 </svelte:head>
 
 {#key animate}
-  <section class={`${animate ? 'opacity-100' : 'opacity-0'} flex flex-col items-center`}>
+  <div class={`${animate ? 'opacity-100' : 'opacity-0'} flex flex-col items-center`}>
     <About />
     <Projects />
     
@@ -27,5 +27,5 @@
         Created by <span class="font-semibold">Muhammad Hadziq Razin</span> &copy; 2023. All Rights Reserved.
       </p>
     </div>
-  </section>
+  </div>
 {/key}

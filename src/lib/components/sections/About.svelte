@@ -4,7 +4,7 @@
 </script>
 
 
-<div class="screen-height md:w-1/2 flex flex-col justify-center items-center gap-4 lg:gap-10">
+<section class="screen-height md:w-1/2 flex flex-col justify-center items-center gap-4 lg:gap-10">
   <h1 in:fly={{y:20, duration: 1000}} class="text-4xl lg:text-[4rem] text-dark font-extrabold">
     Hi! <span class="text-primary">:D</span>
   </h1>
@@ -41,4 +41,4 @@
   
   <!-- SOCIAL LINKS -->
   <Socials />
-</div>
+</section>
