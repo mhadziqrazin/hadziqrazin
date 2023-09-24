@@ -2,6 +2,6 @@
   import '../app.css'
 </script>
 
-<div class="container mx-auto px-4 overflow-x-clip">
+<div class="mx-auto overflow-x-clip">
   <slot />
 </div>
