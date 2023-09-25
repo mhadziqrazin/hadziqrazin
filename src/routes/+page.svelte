@@ -1,7 +1,6 @@
 <script lang="ts">
-  import { onMount } from "svelte"
   import About from "$lib/components/sections/About.svelte"
-  import Projects from "$lib/components/sections/Projects.svelte"
+  import Showcase from "$lib/components/sections/Showcase.svelte"
 </script>
 
 <svelte:head>
@@ -14,7 +13,7 @@
 
 <div class="relative flex flex-col items-center">
   <About />
-  <Projects />
+  <Showcase />
 
   <div class="absolute bottom-0 py-8">
     <p class="text-[0.5rem] lg:text-base font-light text-dark/80">
