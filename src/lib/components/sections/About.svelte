@@ -3,7 +3,6 @@
   import Socials from "../Socials.svelte"
   import Icon from "svelte-icons-pack"
   import AiOutlineArrowDown from "svelte-icons-pack/ai/AiOutlineArrowDown"
-  import { onMount } from "svelte"
 
   let section: HTMLElement
   let y: number
