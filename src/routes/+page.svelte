@@ -6,9 +6,9 @@
 
 <svelte:head>
   <title>Hadziq Razin</title>
-  <meta property="og:title" content="Muhammad Hadziq Razin's Portfolio | Home Page" />
-  <meta property="og:description" content="Muhammad Hadziq Razin's Portfolio | Home Page" />
-  <meta name="description" content="Muhammad Hadziq Razin's Portfolio | Home Page" />
+  <meta property="og:title" content="Muhammad Hadziq Razin's Portfolio" />
+  <meta property="og:description" content="Muhammad Hadziq Razin's Portfolio" />
+  <meta name="description" content="Muhammad Hadziq Razin's Portfolio" />
   <meta name="keywords" content="muhammad hadziq razin, muhammad, hadziq, razin, hajik, ojin" />
 </svelte:head>
 
