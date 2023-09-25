@@ -1,6 +1,6 @@
 <script lang="ts">
   import { fly, fade } from "svelte/transition"
-  import Socials from "../Socials.svelte";
+  import Socials from "../Socials.svelte"
 </script>
 
 
