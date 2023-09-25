@@ -76,7 +76,7 @@
     <!-- SOCIAL LINKS -->
     <Socials />
 
-    <button on:click={scrollDown} class="animate-bounce absolute bottom-20 opacity-70">
+    <button on:click={scrollDown} class="animate-bounce absolute bottom-5 md:bottom-20 opacity-70">
       <Icon src={AiOutlineArrowDown} size={20} />
     </button>
   </section>
