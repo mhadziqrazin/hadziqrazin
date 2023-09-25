@@ -5,7 +5,6 @@
   import AiOutlineArrowDown from "svelte-icons-pack/ai/AiOutlineArrowDown"
 
   import image from "$lib/assets/Hadziq Razin.jpg"
-    import { flip } from "svelte/animate"
 
   let section: HTMLElement
   let y: number
@@ -26,7 +25,7 @@
 
 {#if profile}
 <section class="min-h-screen flex flex-col justify-center">
-  <button in:fly={{y: 20, duration: 500}} on:click={toggle} class="rounded-full border-dark border-4">
+  <button in:fly={{y: 20, duration: 500}} on:click={toggle} class="rounded-full border-dark border-4 animate-pulse">
     <img
     src={image}
     alt="Muhammad Hadziq Razin"
