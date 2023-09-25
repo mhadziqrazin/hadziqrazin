@@ -6,17 +6,16 @@
   import { onMount } from "svelte"
 
   let section: HTMLElement
-
-  let animate = false
-  onMount(() => {
-    animate = true
-  })
+  let y: number
+  
+  $: animate = y < section?.offsetHeight
 
   function scrollDown() {
     window.scrollTo({top: section.offsetHeight, behavior: "smooth"})
   }
 </script>
 
+<svelte:window bind:scrollY={y} />
 
 {#key animate}
   <section bind:this={section} class={`${animate ? 'opacity-100' : 'opacity-0'} container relative mx-auto px-4 min-h-screen md:w-1/2 flex flex-col justify-center items-center gap-4 lg:gap-10`}>
