@@ -2,11 +2,6 @@
   import { onMount } from "svelte"
   import About from "$lib/components/sections/About.svelte"
   import Projects from "$lib/components/sections/Projects.svelte"
-
-  let animate = false
-  onMount(() => {
-    animate = true
-  })
 </script>
 
 <svelte:head>
@@ -17,15 +12,13 @@
   <meta name="keywords" content="muhammad hadziq razin, muhammad, hadziq, razin, hajik, ojin" />
 </svelte:head>
 
-{#key animate}
-  <div class={`${animate ? 'opacity-100' : 'opacity-0'} relative flex flex-col items-center`}>
-    <About />
-    <Projects />
+<div class="relative flex flex-col items-center">
+  <About />
+  <Projects />
 
-    <div class="absolute bottom-0 py-8">
-      <p class="text-[0.5rem] lg:text-base font-light text-dark/80">
-        Created by <span class="font-semibold">Muhammad Hadziq Razin</span> &copy; 2023. All Rights Reserved.
-      </p>
-    </div>
+  <div class="absolute bottom-0 py-8">
+    <p class="text-[0.5rem] lg:text-base font-light text-dark/80">
+      Created by <span class="font-semibold">Muhammad Hadziq Razin</span> &copy; 2023. All Rights Reserved.
+    </p>
   </div>
-{/key}
+</div>
