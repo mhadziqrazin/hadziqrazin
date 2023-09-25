@@ -22,7 +22,7 @@
 
 {#key animate}
   <section bind:this={section} class={`${animate ? 'opacity-100' : 'opacity-0'} container relative mx-auto px-4 min-h-screen md:w-1/2 flex flex-col justify-center items-center gap-4 lg:gap-10`}>
-    <h1 in:fly={{y:20, duration: 1000}} class="text-4xl lg:text-[4rem] lg:leading-[4.5rem] text-dark font-extrabold">
+    <h1 in:fly={{y:20, duration: 1000}} class="flex-grow flex items-end text-4xl lg:text-[4rem] lg:leading-[4.5rem] text-dark font-extrabold">
       Hi! <span class="text-primary">:D</span>
     </h1>
     
@@ -59,7 +59,7 @@
     <!-- SOCIAL LINKS -->
     <Socials />
 
-    <button on:click={scrollDown} class="opacity-70">
+    <button in:fade={{duration: 1000, delay: 600}} on:click={scrollDown} class="flex-grow flex items-end opacity-70 pb-10">
       <div class="animate-bounce">
         <Icon src={AiOutlineArrowDown} size={20} />
       </div>
