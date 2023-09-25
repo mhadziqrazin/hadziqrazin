@@ -10,7 +10,7 @@
   <h1 class="text-4xl lg:text-5xl font-semibold">
     {titles[selected]}
   </h1>
-  <div class="flex flex-col items-center sm:items-stretch sm:flex-row gap-8 py-20 items-left">
+  <div class="flex flex-col flex-grow items-center sm:items-stretch sm:flex-row gap-8 py-20 items-left">
     <!-- NAVBAR -->
     <div class="flex sm:flex-col gap-8 items-end sm:border-r-2 border-dark/50 px-8">
       {#each titles as item, i}
