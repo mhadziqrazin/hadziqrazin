@@ -34,7 +34,7 @@
     <IconSocial
       social={SiGmail}
       title={"Mail"}
-      link={"mailto:mhadziqrazin@gmail.com"}
+      link={"https://mail.google.com/mail/u/0/?fs=1&to=mhadziqrazin@gmail.com&su=Let's%20Get%20to%20Know&tf=cm"}
     />
   </div>
 </div>
