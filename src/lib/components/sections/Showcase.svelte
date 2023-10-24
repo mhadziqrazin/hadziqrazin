@@ -6,18 +6,18 @@
 </script>
 
 
-<section class="flex flex-col items-center py-10">
-  <h1 class="text-4xl lg:text-5xl font-semibold">
+<section class="flex flex-col items-center py-20">
+  <h1 class="text-4xl lg:text-5xl font-semibold text-light">
     {titles[selected]}
   </h1>
   <div class="flex flex-col flex-grow items-center sm:items-stretch sm:flex-row gap-[4vh] py-[8vh] items-left">
     <!-- NAVBAR -->
-    <div class="flex sm:flex-col gap-8 items-end sm:border-r-2 border-dark/50 px-8">
+    <div class="flex sm:flex-col gap-8 items-end sm:border-r-2 border-light/70 px-8">
       {#each titles as item, i}
         <button
           on:click={() => selected = i}
           class:active={selected === i}
-          class="text-dark/70 font-medium"
+          class="text-light/70 font-medium"
         >
           {item}
         </button>
