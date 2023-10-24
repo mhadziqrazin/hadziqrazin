@@ -58,11 +58,5 @@
     
     <!-- SOCIAL LINKS -->
     <Socials />
-
-    <button in:fade={{duration: 1000, delay: 600}} on:click={scrollDown} class="lex opacity-70 pt-6">
-      <div class="animate-bounce">
-        <Icon src={AiOutlineArrowDown} size={20} />
-      </div>
-    </button>
   </section>
 {/key}
