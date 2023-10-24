@@ -11,14 +11,12 @@
   <meta name="keywords" content="muhammad hadziq razin, muhammad, hadziq, razin, hajik, ojin" />
 </svelte:head>
 
-<div class="relative flex flex-col items-center pt-[20vh] gap-[20vh]">
+<div class="relative flex flex-col items-center py-[20vh] gap-[20vh]">
   <About />
-  <div class="relative w-full h-full py-[calc(50vw*0.0524)] before:bg-dark before:w-full before:h-full before:absolute before:-z-50 before:-skew-y-3 -translate-y-[calc(100vw*0.0524)]">
-    <Showcase />
-  </div>
+  <Showcase />
 
   <div class="absolute bottom-0 py-8">
-    <p class="text-[0.5rem] lg:text-base font-light text-white/80">
+    <p class="text-[0.5rem] lg:text-base font-light text-dark/80">
       Created by <span class="font-semibold">Muhammad Hadziq Razin</span> &copy; 2023. All Rights Reserved.
     </p>
   </div>
