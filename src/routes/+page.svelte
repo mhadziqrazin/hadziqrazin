@@ -19,7 +19,7 @@
   <title>Hadziq Razin</title>
   <meta property="og:title" content="Muhammad Hadziq Razin's Portfolio">
   <meta property="og:description" content="Muhammad Hadziq Razin's Portfolio">
-  <meta name="image" property="og:image:secure_url" content="https://lh3.googleusercontent.com/a/ACg8ocL9KRniiuLrmUi2MBHNcN2LMr1kUvzBhpbt-Kkv2pdZdg=s288-c-no">
+  <meta property="og:image:secure_url" content="https://lh3.googleusercontent.com/a/ACg8ocL9KRniiuLrmUi2MBHNcN2LMr1kUvzBhpbt-Kkv2pdZdg=s288-c-no">
   <meta name="description" content="Muhammad Hadziq Razin's Portfolio">
   <meta name="keywords" content="muhammad hadziq razin, muhammad, hadziq, razin, hajik, ojin">
 </svelte:head>
