@@ -11,7 +11,7 @@
   <meta name="keywords" content="muhammad hadziq razin, muhammad, hadziq, razin, hajik, ojin" />
 </svelte:head>
 
-<div class="relative flex flex-col items-center">
+<div class="relative flex flex-col items-center py-[20vh] gap-[20vh]">
   <About />
   <Showcase />
 

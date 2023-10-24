@@ -6,7 +6,7 @@
 </script>
 
 
-<section class="min-h-screen flex flex-col items-center py-20">
+<section class="flex flex-col items-center">
   <h1 class="text-4xl lg:text-5xl font-semibold">
     {titles[selected]}
   </h1>

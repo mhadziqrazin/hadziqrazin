@@ -1,9 +1,7 @@
 <script lang="ts">
   import { fly, fade } from "svelte/transition"
   import Socials from "../Socials.svelte"
-  import Icon from "svelte-icons-pack"
-  import AiOutlineArrowDown from "svelte-icons-pack/ai/AiOutlineArrowDown"
-    import { onMount } from "svelte"
+  import { onMount } from "svelte"
 
   let section: HTMLElement
   let y: number
@@ -21,7 +19,7 @@
 <svelte:window bind:scrollY={y} />
 
 {#key animate}
-  <section bind:this={section} class={`${animate ? 'opacity-100' : 'opacity-0'} container relative mx-auto px-4 min-h-screen md:w-1/2 flex flex-col justify-center items-center gap-4 lg:gap-10`}>
+  <section bind:this={section} class={`${animate ? 'opacity-100' : 'opacity-0'} container relative mx-auto px-4 md:w-1/2 flex flex-col justify-center items-center gap-4 lg:gap-10`}>
     <h1 in:fly={{y:20, duration: 1000}} class="flex text-4xl lg:text-[4rem] lg:leading-[4.5rem] text-dark font-extrabold">
       Hi!&nbsp;<span class="text-primary">:D</span>
     </h1>
