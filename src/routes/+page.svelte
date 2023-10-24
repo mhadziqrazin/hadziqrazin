@@ -15,7 +15,7 @@
 <div class="relative flex flex-col items-center pt-[20vh]">
   <About />
   <div class="relative bg-dark w-full h-full mt-[20%]">
-    <img src={curve} alt="curve section" class="absolute top-0 -translate-y-full w-full">
+    <img src={curve} alt="curve section" class="absolute -z-50 top-0 -translate-y-full w-full">
     <Showcase />
   </div>
 
