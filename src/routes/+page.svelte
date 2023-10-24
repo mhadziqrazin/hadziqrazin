@@ -9,6 +9,8 @@
   import { onMount } from "svelte"
   import { fade, fly } from "svelte/transition"
 
+  import profile from "$lib/assets/profile.png"
+
   let animate = false
   onMount(() => {
     animate = true
@@ -17,9 +19,10 @@
 
 <svelte:head>
   <title>Hadziq Razin</title>
-  <meta property="og:title" content="Muhammad Hadziq Razin's Portfolio | Home Page">
-  <meta property="og:description" content="Muhammad Hadziq Razin's Portfolio | Home Page">
-  <meta name="description" content="Muhammad Hadziq Razin's Portfolio | Home Page">
+  <meta property="og:title" content="Muhammad Hadziq Razin's Portfolio">
+  <meta property="og:description" content="Muhammad Hadziq Razin's Portfolio">
+  <meta name="image" property="og:image" content={profile}>
+  <meta name="description" content="Muhammad Hadziq Razin's Portfolio">
   <meta name="keywords" content="muhammad hadziq razin, muhammad, hadziq, razin, hajik, ojin">
 </svelte:head>
 
