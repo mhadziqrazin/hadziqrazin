@@ -5,7 +5,11 @@
 
 
 <section class="flex flex-col">
-  <div class="flex flex-wrap gap-x-20 justify-center">
+  <div class="flex flex-wrap px-10 gap-x-10 justify-evenly">
+    <Project project={toDo}/>
+    <Project project={toDo}/>
+    <Project project={toDo}/>
+    <Project project={toDo}/>
     <Project project={toDo}/>
     <Project project={toDo}/>
   </div>
