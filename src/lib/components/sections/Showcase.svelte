@@ -12,12 +12,12 @@
   </h1>
   <div class="flex flex-col items-center justify-center lg:items-stretch lg:flex-row py-10 lg:py-20">
     <!-- NAVBAR -->
-    <div class="flex lg:flex-col gap-10 items-end lg:border-r-2 border-light/70 px-4">
+    <div class="flex lg:flex-col gap-8 items-end lg:border-r-2 border-light/70 px-4">
       {#each titles as item, i}
         <button
           on:click={() => selected = i}
           class:active={selected === i}
-          class="text-light/30 hover:text-light transition-colors duration-200 font-medium"
+          class="text-light/30 hover:text-light transition-colors duration-200 font-medium  text-sm sm:text-base lg:text-xl"
         >
           {item}
         </button>
