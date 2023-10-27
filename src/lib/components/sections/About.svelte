@@ -19,7 +19,7 @@
 <svelte:window bind:scrollY={y} />
 
 {#key animate}
-  <section bind:this={section} class={`${animate ? 'opacity-100' : 'opacity-0'} container relative mx-auto px-4 md:w-1/2 flex flex-col justify-center items-center gap-4 lg:gap-10`}>
+  <section bind:this={section} class={`${animate ? 'opacity-100' : 'opacity-0'} container relative mx-auto px-4 md:w-1/2 flex flex-col justify-center items-center py-[min(20vh,20rem)] gap-4 lg:gap-10`}>
     <h1 in:fly={{y:20, duration: 1000}} class="flex text-4xl lg:text-[4rem] lg:leading-[4.5rem] text-dark font-extrabold">
       Hi!&nbsp;<span class="text-primary">:D</span>
     </h1>

@@ -14,9 +14,9 @@
   <meta name="keywords" content="muhammad hadziq razin, muhammad, hadziq, razin, hajik, ojin">
 </svelte:head>
 
-<div class="relative flex flex-col items-center pt-[20vh]">
+<div class="relative flex flex-col items-center">
   <About />
-  <div class="relative bg-dark w-full h-full mt-[20%]">
+  <div class="relative bg-dark w-full h-full mt-[10%]">
     <img src={curve} alt="curve section" class="absolute -z-50 top-0 -translate-y-[99%] w-full">
     <Showcase />
   </div>
