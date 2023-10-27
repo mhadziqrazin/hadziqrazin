@@ -17,7 +17,7 @@
         <button
           on:click={() => selected = i}
           class:active={selected === i}
-          class="text-light/70 font-medium"
+          class="text-light/30 hover:text-light transition-colors duration-200 font-medium"
         >
           {item}
         </button>
@@ -33,7 +33,6 @@
 
 <style>
   .active {
-    --tw-text-opacity: 1;
-    color: rgb(232 69 69 / var(--tw-text-opacity));
+    color: #FF8C32;
   }
 </style>
