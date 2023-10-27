@@ -4,13 +4,11 @@
 </script>
 
 
-<section class="flex flex-col">
-  <div class="flex flex-wrap px-10 gap-x-10 justify-evenly">
-    <Project project={toDo}/>
-    <Project project={toDo}/>
-    <Project project={toDo}/>
-    <Project project={toDo}/>
-    <Project project={toDo}/>
-    <Project project={toDo}/>
-  </div>
-</section>
+<div class="grid grid-cols-1 lg:grid-cols-2 w-fit mx-10 gap-x-10">
+  <Project project={toDo}/>
+  <Project project={toDo}/>
+  <Project project={toDo}/>
+  <Project project={toDo}/>
+  <Project project={toDo}/>
+  <Project project={toDo}/>
+</div>

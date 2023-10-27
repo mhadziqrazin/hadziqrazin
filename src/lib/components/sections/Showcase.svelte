@@ -10,9 +10,9 @@
   <h1 class="text-4xl lg:text-5xl font-semibold text-light">
     {titles[selected]}
   </h1>
-  <div class="flex flex-col items-center md:items-stretch md:flex-row py-10 md:py-20 items-left">
+  <div class="flex flex-col items-center justify-center lg:items-stretch lg:flex-row py-10 lg:py-20">
     <!-- NAVBAR -->
-    <div class="flex md:flex-col gap-10 items-end md:border-r-2 border-light/70 px-8">
+    <div class="flex lg:flex-col gap-10 items-end lg:border-r-2 border-light/70 px-4">
       {#each titles as item, i}
         <button
           on:click={() => selected = i}
@@ -25,7 +25,7 @@
     </div>
 
     <!-- CONTENT -->
-    <div class="mt-20 md:mt-0">
+    <div class="mt-20 lg:mt-0">
       <Projects />
     </div>
   </div>
