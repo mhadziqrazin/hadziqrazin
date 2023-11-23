@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte"
-  import { fade } from "svelte/transition"
+  import { fade, fly } from "svelte/transition"
 
   let animate = false
   onMount(() => {
@@ -13,7 +13,7 @@
 </svelte:head>
 
 <section in:fade={{duration: 300}} class="flex flex-col items-center">
-  <h1 class="text-5xl font-semibold">
+  <h1 in:fly={{y:20, duration: 1000}} class="text-[4rem] font-semibold text-dark">
     Projects
   </h1>
 </section>
