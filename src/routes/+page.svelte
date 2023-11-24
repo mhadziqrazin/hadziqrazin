@@ -55,8 +55,19 @@
       </p>
 
       <!-- PAGES -->
-      <p in:fade={{duration: 1000, delay: 600}} class="text-dark/60 text-xs lg:text-base">
-        See: <a href="/projects" class="w-full underline text-secondary/70 hover:text-secondary/90 transition-all duration-200">Projects</a>
+      <p in:fade={{duration: 1000, delay: 600}} class="text-dark/60 text-sm lg:text-lg">
+        See:
+        <a href="/projects" class="w-full underline text-secondary">
+          Projects
+        </a>
+        <span class="font-semibold">&centerdot;</span>
+        <a href="/" class="w-full underline text-secondary">
+          Works
+        </a>
+        <span class="font-semibold">&centerdot;</span>
+        <a href="/" class="w-full underline text-secondary">
+          Life
+        </a>
       </p>
     </div>
     
