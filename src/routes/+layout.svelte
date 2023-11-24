@@ -4,6 +4,8 @@
   import { fade } from 'svelte/transition'
 
   $: path = $page.route.id
+
+  let year = (new Date()).getFullYear()
 </script>
 
 <div class="mx-auto overflow-x-clip min-h-screen flex flex-col justify-center">
@@ -25,7 +27,7 @@
   </div>
   <div class="py-8 w-full flex justify-center">
     <p class="text-[0.5rem] lg:text-base font-light text-dark/80">
-      Created by <span class="font-semibold">Muhammad Hadziq Razin</span> &copy; 2023. All Rights Reserved.
+      Created by <span class="font-semibold">Muhammad Hadziq Razin</span> &copy; {year}. All Rights Reserved.
     </p>
   </div>
 </div>
