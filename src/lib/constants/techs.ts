@@ -2,6 +2,7 @@ import type { Tech } from '$lib/types/project'
 import typeScriptLogo from '$lib/assets/techs/Logo-official-svgrepo-com.svg'
 import svelteLogo from '$lib/assets/techs/svelte-icon-svgrepo-com.svg'
 import nextjsLogo from '$lib/assets/techs/nextjs-icon-svgrepo-com.svg'
+import tailwindLogo from '$lib/assets/techs/tailwind-svgrepo-com.svg'
 
 export const typeScript: Tech = {
   name: 'TypeScript',
@@ -22,4 +23,11 @@ export const nextjs: Tech = {
   color: '#000',
   img: nextjsLogo,
   url: 'https://nextjs.org/'
+}
+
+export const tailwind: Tech = {
+  name: 'TailwindCSS',
+  color: '#44a8b3',
+  img: tailwindLogo,
+  url: 'https://tailwindcss.com/'
 }
