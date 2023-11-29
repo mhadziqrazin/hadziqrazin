@@ -21,7 +21,7 @@
 
   <div class="my-14 flex flex-wrap justify-center gap-10">
     {#each projects as project}
-    <div transition:fly={{ x: 500, duration: 2000, delay: 1000 }} >
+    <div>
       <Project {project} />
     </div>
     {/each}
