@@ -1,11 +1,11 @@
 import type { Project } from '$lib/types/project'
-import image from '$lib/assets/projects/todo.png'
-import { typeScript } from './techs'
+import todoImage from '$lib/assets/projects/todo.png'
+import { tailwind, typeScript } from './techs'
 
 export const toDo: Project = {
-  img: image,
+  img: todoImage,
   name: 'To Do Hajik',
   description: 'To do list with feeds feature where you can share your completed task',
-  techs: [typeScript],
+  techs: [typeScript, tailwind],
   url: 'https://to.do.hadziqrazin.com'
 }
