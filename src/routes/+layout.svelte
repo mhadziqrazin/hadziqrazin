@@ -8,7 +8,7 @@
   let year = (new Date()).getFullYear()
 </script>
 
-<div class="mx-auto overflow-x-clip min-h-screen flex flex-col justify-center">
+<div class="mx-auto overflow-x-clip height-screen flex flex-col justify-center">
   {#if path === ('/projects' || '/works' || '/life')}
     <nav in:fade={{duration: 300}} class="py-10">
       <ul class="flex justify-center gap-4 text-dark">
@@ -42,5 +42,10 @@
     color: #E84545;
     font-weight: 600;
     opacity: 1;
+  }
+
+  .height-screen {
+    min-height: 100vh;
+    min-height: 100svh;
   }
 </style>
