@@ -1,7 +1,12 @@
 <script lang="ts">
-  import About from "$lib/components/sections/About.svelte"
-  import Showcase from "$lib/components/sections/Showcase.svelte"
-  import curve from '$lib/assets/backgrounds/layered-waves-haikei.svg'
+  import { fly, fade } from "svelte/transition"
+  import Socials from "$lib/components/Socials.svelte"
+  import { onMount } from "svelte"
+
+  let animate = false
+  onMount(() => {
+    animate = true
+  })
 </script>
 
 <svelte:head>
@@ -14,16 +19,59 @@
   <meta name="keywords" content="muhammad hadziq razin, muhammad, hadziq, razin, hajik, ojin">
 </svelte:head>
 
-<div class="relative flex flex-col items-center">
-  <About />
-  <div class="relative bg-dark w-full h-full mt-[10%]">
-    <img src={curve} alt="curve section" class="absolute -z-50 top-0 -translate-y-[99%] w-full">
-    <Showcase />
-  </div>
+{#key animate}
+  <section class={`${animate ? 'opacity-100' : 'opacity-0'} container relative mx-auto px-4 md:w-1/2 flex flex-col justify-center items-center gap-4 lg:gap-10`}>
+    <h1 in:fly={{y:20, duration: 1000}} class="flex text-3xl lg:text-[3rem] lg:leading-[3.5rem] text-dark font-extrabold">
+      Hi!&nbsp;<span class="text-primary">:D</span>
+    </h1>
+    
+    <div class="flex flex-col gap-1 lg:gap-3">
+      <!-- NAME -->
+      <p in:fade={{duration: 1000, delay: 200}} class="text-lg lg:text-3xl font-medium text-dark/90">
+        Mu&centerdot;ham&centerdot;mad <span class="font-bold">Ha&centerdot;dziq</span> Ra&centerdot;zin <span class="text-dark/40">/'h&#593;z&#618;k/</span>
+      </p>
+    
+      <!-- OTHER NAMES -->
+      <p in:fly={{y:-5, duration: 1000, delay: 400}} class="text-[0.65rem] lg:text-sm text-dark/60 font-light">
+        Other names: Hajik, Hajiq, Haziq, Hazik, Ojin, wait what.
+      </p>
+    
+      <!-- DESCRIPTION -->
+      <p in:fade={{duration: 1000, delay: 200}} class="text-base/7 lg:text-2xl/9 font-medium text-dark/80">
+    
+        &bullet;an undergraduate
+    
+        <a href="https://cs.ui.ac.id" target="_blank" class="underline decoration-[1.5px] md:decoration-[2.2px]">
+          computer science
+        </a>
+    
+        student at the
+    
+        <a href="https://ui.ac.id" target="_blank" class="underline decoration-[1.5px] md:decoration-[2.2px]">
+          University of Indonesia</a>,
+    
+        who's passionate about
+        <span class="text-dark font-semibold">software engineering</span>.
+      </p>
 
-  <div class="py-8 bg-dark w-full flex justify-center">
-    <p class="text-[0.5rem] lg:text-base font-light text-light/80">
-      Created by <span class="font-semibold">Muhammad Hadziq Razin</span> &copy; 2023. All Rights Reserved.
-    </p>
-  </div>
-</div>
+      <!-- PAGES -->
+      <p in:fade={{duration: 1000, delay: 600}} class="text-dark/60 text-sm lg:text-lg">
+        See:
+        <a href="/works" class="w-full underline text-secondary">
+          Works
+        </a>
+      <span class="font-semibold">&centerdot;</span>
+        <a href="/projects" class="w-full underline text-secondary">
+          Projects
+        </a>
+        <span class="font-semibold">&centerdot;</span>
+        <a href="/life" class="w-full underline text-secondary">
+          Life
+        </a>
+      </p>
+    </div>
+    
+    <!-- SOCIAL LINKS -->
+    <Socials />
+  </section>
+{/key}

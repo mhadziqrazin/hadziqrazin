@@ -4,8 +4,8 @@
   import BsLinkedin from "svelte-icons-pack/bs/BsLinkedin"
   import BsInstagram from "svelte-icons-pack/bs/BsInstagram"
   import SiGmail from "svelte-icons-pack/si/SiGmail"
+  import BsFileEarmarkPdf from "svelte-icons-pack/bs/BsFileEarmarkPdf"
   import { fly } from "svelte/transition"
-
 </script>
 
 <div class="w-1/2 flex self-center justify-around">
@@ -30,7 +30,14 @@
       link={"https://www.instagram.com/hadziqrazin/"}
     />
   </div>
-  <div in:fly={{x:-10, duration: 1000, delay: 700}}>
+  <button in:fly={{x:-10, duration: 1000, delay: 700}}>
+    <IconSocial
+      social={BsFileEarmarkPdf}
+      title={"CV"}
+      link={"https://drive.google.com/file/d/1ngL0ChQkZK0qEK5UKnUSdvFwx5LNvYrC/view?usp=drive_link"}
+    />
+  </button>
+  <div in:fly={{x:-10, duration: 1000, delay: 800}}>
     <IconSocial
       social={SiGmail}
       title={"Mail"}

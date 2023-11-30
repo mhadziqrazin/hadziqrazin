@@ -9,6 +9,6 @@ export interface Project {
 export interface Tech {
   name: string
   color: string
-  img: string
+  img: any
   url: string
 }
