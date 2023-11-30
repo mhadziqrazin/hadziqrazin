@@ -8,7 +8,7 @@ export const toDo: Project = {
   img: todoImage,
   name: 'To Do Hajik',
   description: 'To do list with feeds feature where you can share your completed task',
-  techs: [typeScript, tailwind],
+  techs: [nextjs, typeScript, tailwind],
   url: 'https://to.do.hadziqrazin.com'
 }
 
@@ -29,5 +29,5 @@ export const personal: Project = {
 }
 
 export const projects: Project[] = [
-  toDo, appbilitiease, personal
+  appbilitiease, personal, toDo
 ]
