@@ -3,11 +3,6 @@
   import { onMount } from "svelte"
   import { fade, fly } from "svelte/transition"
   import { projects } from "$lib/constants/projects";
-
-  let animate = false
-  onMount(() => {
-    animate = true
-  })
 </script>
 
 <svelte:head>
