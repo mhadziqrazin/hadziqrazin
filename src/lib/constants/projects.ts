@@ -2,7 +2,8 @@ import type { Project } from '$lib/types/project'
 import todoImage from '$lib/assets/projects/todo.png'
 import personalImage from '$lib/assets/projects/personal.png'
 import airbnbImage from '$lib/assets/projects/airbnb.png'
-import { mongoDb, nextjs, postgreSql, prisma, svelte, tailwind, typeScript } from './techs'
+import iniWebImage from '$lib/assets/projects/iniWeb.png'
+import { firebase, javaScript, mongoDb, nextjs, postgreSql, prisma, svelte, tailwind, typeScript } from './techs'
 
 export const toDo: Project = {
   img: todoImage,
@@ -28,6 +29,14 @@ export const airbnb: Project = {
   url: 'https://www.hadziqrazin.com'
 }
 
+export const iniWeb: Project = {
+  img: iniWebImage,
+  name: 'IniWeb',
+  description: "Social media kinda Twitter app built for Ristek Fasilkom UI open recruitment task",
+  techs: [nextjs, javaScript, tailwind, prisma, firebase],
+  url: 'https://hadziq-ristek-webdev-2023.vercel.app'
+}
+
 export const projects: Project[] = [
-  personal, toDo, airbnb
+  personal, toDo, airbnb, iniWeb
 ]

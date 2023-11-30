@@ -36,7 +36,7 @@
     {/each}
   </div>
 
-  {#if toShow.length > 3}
+  {#if data.length > 3}
     {#if !more}
       <button on:click={toggleView} class="text-dark/40 animate-bounce">
         View more

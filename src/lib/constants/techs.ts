@@ -8,6 +8,7 @@ import SiPrisma from 'svelte-icons-pack/si/SiPrisma'
 import SiReact from 'svelte-icons-pack/si/SiReact'
 import SiJavascript from 'svelte-icons-pack/si/SiJavascript'
 import SiMongodb from 'svelte-icons-pack/si/SiMongodb'
+import SiFirebase from 'svelte-icons-pack/si/SiFirebase'
 
 export const typeScript: Tech = {
   name: 'TypeScript',
@@ -70,4 +71,11 @@ export const mongoDb: Tech = {
   color: '#58AA50',
   img: SiMongodb,
   url: 'https://www.mongodb.com/'
+}
+
+export const firebase: Tech = {
+  name: 'Firebase',
+  color: '#fcca3f',
+  img: SiFirebase,
+  url: 'https://firebase.google.com/'
 }
