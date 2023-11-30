@@ -15,7 +15,7 @@
     <a href={project.url} target="_blank" title={project.url} class="font-semibold text-xl text-dark underline w-fit">
       {project.name}
     </a>
-    <p class="text-dark/70 mb-[60px]">
+    <p class="text-dark/70" class:tech-space={techs.length > 0}>
       {project.description}
     </p>
 
@@ -31,3 +31,9 @@
     </div>
   </div>
 </div>
+
+<style>
+  .tech-space {
+    margin-bottom: 60px;
+  }
+</style>
