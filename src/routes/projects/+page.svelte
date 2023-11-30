@@ -19,7 +19,7 @@
     Projects
   </h1>
   <h3 class="text-sm text-dark/60">
-    Some projects for learning purposes
+    Some projects that built for learning purposes
   </h3>
 
   <div class="my-14 flex flex-wrap justify-center gap-10">
