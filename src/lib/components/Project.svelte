@@ -12,7 +12,7 @@
 
   <!-- BODY -->
   <div class="min-h-full p-4 flex flex-col gap-2">
-    <a href={project.url} target="_blank" class="font-semibold text-xl text-dark underline w-fit">
+    <a href={project.url} target="_blank" title={project.url} class="font-semibold text-xl text-dark underline w-fit">
       {project.name}
     </a>
     <p class="text-dark/70 mb-[60px]">
