@@ -29,5 +29,5 @@ export const personal: Project = {
 }
 
 export const projects: Project[] = [
-  appbilitiease, personal, toDo
+  appbilitiease, personal, toDo, toDo, toDo, toDo, toDo
 ]

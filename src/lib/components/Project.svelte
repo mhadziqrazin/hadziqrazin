@@ -6,7 +6,7 @@
   const techs = project.techs
 </script>
 
-<div class="relative flex flex-col min-h-full w-[300px] overflow-hidden shadow-lg hover:shadow-xl duration-200 rounded-xl bg-white/70 border-[1px] border-dark/10">
+<div class="relative flex flex-col min-h-full w-[300px] overflow-hidden shadow-lg hover:shadow-xl duration-200 rounded-xl bg-white/70 border-[1px] border-dark/[0.13]">
   <!-- IMAGE -->
   <img src={project.img} alt={project.name} class="aspect-[15/9] object-cover" >
 
