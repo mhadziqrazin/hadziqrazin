@@ -3,7 +3,7 @@
   import { fade, fly } from "svelte/transition"
   import { projects } from "$lib/constants/projects";
 
-  let more: boolean = false
+  let more: boolean = true
   $: numDisp = (more) ? projects.length : 3
   $: projectsToShow = projects.slice(0, numDisp)
 
@@ -21,7 +21,7 @@
     Projects
   </h1>
   <h3 in:fly={{ y: -20, duration: 1000, delay: 300 }} class="text-sm text-dark/60">
-    Some projects that built for learning purposes
+    Some projects for learning purposes
   </h3>
 
   <div class="my-14 flex flex-wrap justify-center gap-10 px-10">
