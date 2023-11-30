@@ -57,7 +57,7 @@
       <!-- PAGES -->
       <p in:fade={{duration: 1000, delay: 600}} class="text-dark/60 text-sm lg:text-lg">
         See:
-        <a href="/" class="w-full underline text-secondary">
+        <a href="/works" class="w-full underline text-secondary">
           Works
         </a>
       <span class="font-semibold">&centerdot;</span>

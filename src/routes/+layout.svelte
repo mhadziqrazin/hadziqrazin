@@ -9,19 +9,19 @@
 </script>
 
 <div class="mx-auto overflow-x-clip height-screen flex flex-col justify-center">
-  {#if path === ('/projects' || '/works' || '/life')}
+  {#if path === '/projects' || path === '/works' || path === '/life'}
     <nav in:fade={{duration: 300}} class="py-10">
       <ul class="flex justify-center gap-4 text-dark">
         <a href="/" class="opacity-50 hover:opacity-100 transition-all duration-200">
           Home
         </a>
-        <a href="/" class="opacity-50 hover:opacity-100 transition-all duration-200">
+        <a href="/works" class="opacity-50 hover:opacity-100 transition-all duration-200" class:selected={path === '/works'}>
           Works
         </a>
         <a href="/projects" class="opacity-50 hover:opacity-100 transition-all duration-200" class:selected={path === '/projects'}>
           Projects
         </a>
-        <a href="/" class="opacity-50 hover:opacity-100 transition-all duration-200">
+        <a href="/" class="opacity-50 hover:opacity-100 transition-all duration-200" class:selected={path === '/life'}>
           Life
         </a>
       </ul>
