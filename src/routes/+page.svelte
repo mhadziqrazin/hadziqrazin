@@ -65,7 +65,7 @@
           Projects
         </a>
         <span class="font-semibold">&centerdot;</span>
-        <a href="/" class="w-full underline text-secondary">
+        <a href="/life" class="w-full underline text-secondary">
           Life
         </a>
       </p>
