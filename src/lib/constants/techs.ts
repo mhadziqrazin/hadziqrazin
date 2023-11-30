@@ -5,6 +5,8 @@ import SiNextdotjs from 'svelte-icons-pack/si/SiNextdotjs'
 import SiTailwindcss from 'svelte-icons-pack/si/SiTailwindcss'
 import SiPostgresql from "svelte-icons-pack/si/SiPostgresql"
 import SiPrisma from "svelte-icons-pack/si/SiPrisma"
+import SiReact from "svelte-icons-pack/si/SiReact"
+import SiJavascript from "svelte-icons-pack/si/SiJavascript"
 
 export const typeScript: Tech = {
   name: 'TypeScript',
@@ -46,4 +48,18 @@ export const prisma: Tech = {
   color: '#0c344b',
   img: SiPrisma,
   url: 'https://www.prisma.io/'
+}
+
+export const reactjs: Tech = {
+  name: 'React.js',
+  color: '#64d9fd',
+  img: SiReact,
+  url: 'https://react.dev/'
+}
+
+export const javaScript: Tech = {
+  name: 'JavaScript',
+  color: '#F7DF1E',
+  img: SiJavascript,
+  url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
 }

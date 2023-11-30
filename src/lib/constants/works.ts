@@ -1,7 +1,7 @@
 import type { Project } from '$lib/types/project'
 import appbilitieaseImage from '$lib/assets/works/appbilitiease.png'
 import mikostopImage from '$lib/assets/works/mikostop.png'
-import { nextjs, tailwind, typeScript } from './techs'
+import { javaScript, nextjs, reactjs, tailwind, typeScript } from './techs'
 
 
 export const appbilitiease: Project = {
@@ -16,7 +16,7 @@ export const mikostop: Project = {
   img: mikostopImage,
   name: 'Mikostop',
   description: 'Invasive Pulmonary Aspergillosis (IPA) Scoring website owned by Indonesia Pulmonary Mycoses Centre (IPMC)',
-  techs: [nextjs, typeScript, tailwind],
+  techs: [reactjs, javaScript],
   url: 'https://mikostop.com'
 }
 
