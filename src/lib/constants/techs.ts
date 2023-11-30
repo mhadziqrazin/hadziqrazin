@@ -53,7 +53,7 @@ export const prisma: Tech = {
 }
 
 export const reactjs: Tech = {
-  name: 'React.js',
+  name: 'ReactJS',
   color: '#64d9fd',
   img: SiReact,
   url: 'https://react.dev/'
