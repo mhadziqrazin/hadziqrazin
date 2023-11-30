@@ -2,6 +2,9 @@
   import Project from "$lib/components/Project.svelte"
   import type { Project as ProjectType } from "$lib/types/project"
   import { fade, fly } from "svelte/transition"
+  import Icon from 'svelte-icons-pack/Icon.svelte'
+  import HiOutlineChevronDoubleDown from "svelte-icons-pack/hi/HiOutlineChevronDoubleDown"
+  import HiOutlineChevronDoubleUp from "svelte-icons-pack/hi/HiOutlineChevronDoubleUp"
 
   export let data: ProjectType[]
   export let title: string
@@ -38,12 +41,12 @@
 
   {#if data.length > 3}
     {#if !more}
-      <button on:click={toggleView} class="text-dark/40 animate-bounce">
-        View more
+      <button on:click={toggleView} class="flex gap-1 items-center text-dark opacity-40 animate-bounce">
+        View more <Icon src={HiOutlineChevronDoubleDown} />
       </button>
     {:else}
-      <button on:click={toggleView} class="text-dark/40 animate-bounce">
-        View less
+      <button on:click={toggleView} class="flex gap-1 items-center text-dark opacity-40 animate-bounce">
+        View less <Icon src={HiOutlineChevronDoubleUp} />
       </button>
     {/if}
   {/if}
