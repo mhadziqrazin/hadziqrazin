@@ -3,6 +3,7 @@ import todoImage from '$lib/assets/projects/todo.png'
 import personalImage from '$lib/assets/projects/personal.png'
 import airbnbImage from '$lib/assets/projects/airbnb.png'
 import iniWebImage from '$lib/assets/projects/iniWeb.png'
+import ptiImage from '$lib/assets/projects/pti.png'
 import { firebase, javaScript, mongoDb, nextjs, postgreSql, prisma, svelte, tailwind, typeScript } from './techs'
 
 export const toDo: Project = {
@@ -32,11 +33,19 @@ export const airbnb: Project = {
 export const iniWeb: Project = {
   img: iniWebImage,
   name: 'IniWeb',
-  description: "Social media kinda Twitter app built for Ristek Fasilkom UI open recruitment task",
+  description: "Social media kinda Twitter app built for Ristek Fasilkom UI WebDev division open recruitment task",
   techs: [nextjs, javaScript, tailwind, prisma, firebase],
   url: 'https://hadziq-ristek-webdev-2023.vercel.app'
 }
 
+export const pti: Project = {
+  img: ptiImage,
+  name: 'PTI Weather and Movies',
+  description: "Utilizing weather and movie open API for BEM Fasilkom UI WebDev division (PTI) open recruitment task",
+  techs: [nextjs, typeScript, tailwind],
+  url: 'https://pti-weather-hadziq.vercel.app'
+}
+
 export const projects: Project[] = [
-  personal, toDo, airbnb, iniWeb
+  personal, toDo, airbnb, iniWeb, pti
 ]
