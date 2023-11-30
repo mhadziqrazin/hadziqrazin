@@ -15,11 +15,11 @@
         <a href="/" class="opacity-50 hover:opacity-100 transition-all duration-200">
           Home
         </a>
-        <a href="/projects" class="opacity-50 hover:opacity-100 transition-all duration-200" class:selected={path === '/projects'}>
-          Projects
-        </a>
         <a href="/" class="opacity-50 hover:opacity-100 transition-all duration-200">
           Works
+        </a>
+        <a href="/projects" class="opacity-50 hover:opacity-100 transition-all duration-200" class:selected={path === '/projects'}>
+          Projects
         </a>
         <a href="/" class="opacity-50 hover:opacity-100 transition-all duration-200">
           Life
