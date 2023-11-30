@@ -3,7 +3,7 @@
   import { fade, fly } from "svelte/transition"
   import { projects } from "$lib/constants/projects";
 
-  let more: boolean = true
+  let more: boolean = false
   $: numDisp = (more) ? projects.length : 3
   $: projectsToShow = projects.slice(0, numDisp)
 
@@ -16,7 +16,7 @@
   <title>Projects | Hadziq Razin</title>
 </svelte:head>
 
-<section in:fade={{duration: 300}} class="flex flex-col items-center">
+<section in:fade={{duration: 300}} class="max-w-[1060px] flex flex-col items-center">
   <h1 in:fly={{ y: -20, duration: 1000 }} class="text-[4rem] font-semibold text-dark">
     Projects
   </h1>
