@@ -3,6 +3,8 @@ import SiTypescript from 'svelte-icons-pack/si/SiTypescript'
 import SiSvelte from 'svelte-icons-pack/si/SiSvelte'
 import SiNextdotjs from 'svelte-icons-pack/si/SiNextdotjs'
 import SiTailwindcss from 'svelte-icons-pack/si/SiTailwindcss'
+import SiPostgresql from "svelte-icons-pack/si/SiPostgresql"
+import SiPrisma from "svelte-icons-pack/si/SiPrisma"
 
 export const typeScript: Tech = {
   name: 'TypeScript',
@@ -30,4 +32,18 @@ export const tailwind: Tech = {
   color: '#44a8b3',
   img: SiTailwindcss,
   url: 'https://tailwindcss.com/'
+}
+
+export const postgreSql: Tech = {
+  name: 'PostgreSQL',
+  color: '#306793',
+  img: SiPostgresql,
+  url: 'https://www.postgresql.org/'
+}
+
+export const prisma: Tech = {
+  name: 'Prisma',
+  color: '#0c344b',
+  img: SiPrisma,
+  url: 'https://www.prisma.io/'
 }
