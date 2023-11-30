@@ -3,10 +3,11 @@ import SiTypescript from 'svelte-icons-pack/si/SiTypescript'
 import SiSvelte from 'svelte-icons-pack/si/SiSvelte'
 import SiNextdotjs from 'svelte-icons-pack/si/SiNextdotjs'
 import SiTailwindcss from 'svelte-icons-pack/si/SiTailwindcss'
-import SiPostgresql from "svelte-icons-pack/si/SiPostgresql"
-import SiPrisma from "svelte-icons-pack/si/SiPrisma"
-import SiReact from "svelte-icons-pack/si/SiReact"
-import SiJavascript from "svelte-icons-pack/si/SiJavascript"
+import SiPostgresql from 'svelte-icons-pack/si/SiPostgresql'
+import SiPrisma from 'svelte-icons-pack/si/SiPrisma'
+import SiReact from 'svelte-icons-pack/si/SiReact'
+import SiJavascript from 'svelte-icons-pack/si/SiJavascript'
+import SiMongodb from 'svelte-icons-pack/si/SiMongodb'
 
 export const typeScript: Tech = {
   name: 'TypeScript',
@@ -62,4 +63,11 @@ export const javaScript: Tech = {
   color: '#F7DF1E',
   img: SiJavascript,
   url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+}
+
+export const mongoDb: Tech = {
+  name: 'MongoDB',
+  color: '#58AA50',
+  img: SiMongodb,
+  url: 'https://www.mongodb.com/'
 }
