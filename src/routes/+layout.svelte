@@ -1,7 +1,8 @@
 <script lang="ts">
   import '../app.css'
-  import { page } from '$app/stores'
-  import { fade } from 'svelte/transition'
+  import { page, navigating } from '$app/stores'
+  import { fade, fly } from 'svelte/transition'
+  import { SpinLine } from 'svelte-loading-spinners'
 
   $: path = $page.route.id
 
@@ -9,6 +10,11 @@
 </script>
 
 <div class="mx-auto overflow-x-clip height-screen flex flex-col justify-center">
+  {#if !!$navigating}
+    <div in:fly={{y:-20, duration: 1000}} class="absolute top-[85px] left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <SpinLine size={35} color={"#2B2E4AE0"} />
+    </div>
+  {/if}
   {#if path === '/projects' || path === '/works' || path === '/life'}
     <nav in:fade={{duration: 300}} class="py-10">
       <ul class="flex justify-center gap-4 text-dark">
