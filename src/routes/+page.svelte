@@ -21,8 +21,8 @@
 
 {#key animate}
   <section class={`${animate ? 'opacity-100' : 'opacity-0'} container relative mx-auto px-4 md:w-1/2 flex flex-col justify-center items-center gap-4 lg:gap-10`}>
-    <h1 in:fly={{y:20, duration: 1000}} class="flex text-3xl lg:text-[3rem] lg:leading-[3.5rem] text-dark font-extrabold">
-      Hi!&nbsp;<span class="text-primary">:D</span>
+    <h1 in:fly={{y:20, duration: 1000}} class="flex text-xl lg:text-4xl lg:leading-[3.5rem] text-dark/25 font-extrabold">
+      Hi!&nbsp;<span>:D</span>
     </h1>
     
     <div class="flex flex-col gap-1 lg:gap-3">
