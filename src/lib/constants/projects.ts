@@ -27,7 +27,7 @@ export const airbnb: Project = {
   name: 'Airbnb Hajik',
   description: "Airbnb clone follow along YouTube tutorial for learning purposes",
   techs: [nextjs, typeScript, tailwind, prisma, mongoDb],
-  url: 'https://www.hadziqrazin.com'
+  url: 'https://airbnb.hadziqrazin.com'
 }
 
 export const iniWeb: Project = {

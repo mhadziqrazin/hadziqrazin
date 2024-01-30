@@ -21,14 +21,14 @@
 
 {#key animate}
   <section class={`${animate ? 'opacity-100' : 'opacity-0'} container relative mx-auto px-4 md:w-1/2 flex flex-col justify-center items-center gap-4 lg:gap-10`}>
-    <h1 in:fly={{y:20, duration: 1000}} class="flex text-3xl lg:text-[3rem] lg:leading-[3.5rem] text-dark font-extrabold">
-      Hi!&nbsp;<span class="text-primary">:D</span>
+    <h1 in:fly={{y:20, duration: 1000}} class="flex text-xl lg:text-4xl lg:leading-[3.5rem] text-dark/25 font-extrabold">
+      Hi!&nbsp;<span>:D</span>
     </h1>
     
     <div class="flex flex-col gap-1 lg:gap-3">
       <!-- NAME -->
-      <p in:fade={{duration: 1000, delay: 200}} class="text-lg lg:text-3xl font-medium text-dark/90">
-        Mu&centerdot;ham&centerdot;mad <span class="font-bold">Ha&centerdot;dziq</span> Ra&centerdot;zin <span class="text-dark/40">/'h&#593;z&#618;k/</span>
+      <p in:fade={{duration: 1000, delay: 200}} class="text-lg lg:text-3xl font-medium text-dark/[0.85]">
+        Mu&centerdot;ham&centerdot;mad <span class="font-bold text-dark">Ha&centerdot;dziq</span> Ra&centerdot;zin <span class="text-dark/40">/'h&#593;z&#618;k/</span>
       </p>
     
       <!-- OTHER NAMES -->
@@ -51,11 +51,11 @@
           University of Indonesia</a>,
     
         who's passionate about
-        <span class="text-dark font-semibold">software engineering</span>.
+        <span class="text-dark/90 font-semibold">software engineering</span>.
       </p>
 
       <!-- PAGES -->
-      <p in:fade={{duration: 1000, delay: 600}} class="text-dark/60 text-sm lg:text-lg">
+      <p in:fade={{duration: 1000, delay: 600}} class="text-dark/60 text-xs lg:text-lg">
         See:
         <a href="/works" class="w-full underline text-secondary">
           Works
