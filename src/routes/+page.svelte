@@ -45,10 +45,10 @@
           computer science
         </a>
     
-        student at the
+        student at
     
         <a href="https://ui.ac.id" target="_blank" class="underline decoration-[1.5px] md:decoration-[2.2px]">
-          University of Indonesia</a>,
+          Universitas Indonesia</a>,
     
         who's passionate about
         <span class="text-dark/90 font-semibold">software engineering</span>.
