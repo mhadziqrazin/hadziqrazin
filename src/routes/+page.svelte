@@ -51,7 +51,13 @@
           Universitas Indonesia</a>,
     
         who's passionate about
-        <span class="text-dark/90 font-semibold">software engineering</span>.
+        <span class="text-dark/90 font-semibold">software engineering</span>.<br/>
+        &bullet;currently work as a
+        <span class="text-dark/90 font-semibold">UX Engineer Intern</span>
+        at
+
+        <a href="https://blibli.com" target="_blank" class="underline decoration-[1.5px] md:decoration-[2.2px]">
+          Blibli</a>.
       </p>
 
       <!-- PAGES -->
