@@ -2,6 +2,7 @@ import type { Project } from '$lib/types/project'
 import pemburuImage from '$lib/assets/life/pemburu.png'
 import cssImage from '$lib/assets/life/css.png'
 import meetTheCastImage from '$lib/assets/life/meet-the-cast.png'
+import aDayInMyLifeImage from '$lib/assets/life/a-day-in-my-life.png'
 
 
 export const pemburu: Project = {
@@ -28,6 +29,14 @@ export const meetTheCast: Project = {
   url: 'https://www.youtube.com/watch?v=alrDde8ZgHo'
 }
 
+export const aDayInMyLife: Project = {
+  img: aDayInMyLifeImage,
+  name: 'GENZ SURVIVE CHALLENGE SEHARI TANPA SOCMED???',
+  description: 'Techtalks video by COMPFEST',
+  techs: [],
+  url: 'https://youtu.be/y8s5dOhIrY0?si=xaWJzLXL5TRmqOrt'
+}
+
 export const life: Project[] = [
-  css, pemburu, meetTheCast
+  css, pemburu, aDayInMyLife, meetTheCast
 ]
