@@ -42,7 +42,7 @@
   {#if data.length > 3}
     {#if !more}
       <button on:click={toggleView} class="flex gap-1 items-center text-dark opacity-40 animate-bounce">
-        View more <Icon src={HiOutlineChevronDoubleDown} />
+        show more <Icon src={HiOutlineChevronDoubleDown} />
       </button>
     {:else}
       <button on:click={toggleView} class="flex gap-1 items-center text-dark opacity-40 animate-bounce">
