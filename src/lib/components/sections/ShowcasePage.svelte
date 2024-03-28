@@ -46,7 +46,7 @@
       </button>
     {:else}
       <button on:click={toggleView} class="flex gap-1 items-center text-dark opacity-40 animate-bounce">
-        View less <Icon src={HiOutlineChevronDoubleUp} />
+        show less <Icon src={HiOutlineChevronDoubleUp} />
       </button>
     {/if}
   {/if}
