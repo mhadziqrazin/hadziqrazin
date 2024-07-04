@@ -4,6 +4,11 @@
 
   export let project: Project
   const techs = project.techs
+  $: isOpen = false
+
+  const toggleModal = () => {
+    isOpen = !isOpen
+  }
 </script>
 
 <div class="relative flex flex-col min-h-full w-[300px] overflow-hidden shadow-lg hover:shadow-xl duration-200 rounded-xl bg-white/70 border-[1px] border-dark/[0.13]">
@@ -15,12 +20,12 @@
     <a href={project.url} target="_blank" title={project.url} class="font-semibold text-xl text-dark underline w-fit">
       {project.name}
     </a>
-    <p class="text-dark/70" class:tech-space={techs.length > 0}>
+    <p class="text-dark/70" class:tech-space={techs.length > 0 || project.children?.length || 0 > 0}>
       {project.description}
     </p>
 
     <!-- TECHS -->
-    <div class="absolute bottom-4 flex gap-2">
+    <div class="w-full absolute bottom-4 left-0 px-4 flex gap-2">
       {#each techs as tech}
       <a href={tech.url} target="_blank">
         <div class="flex gap-1 p-[9px] rounded-full hover:shadow-md duration-200" style={`background: ${tech.color}`}>
@@ -28,6 +33,14 @@
         </div>
       </a>
       {/each}
+      {#if project.children?.length || 0 > 0}
+      <button
+        on:click={toggleModal}
+       class="ml-auto h-[31px] rounded-full px-4 bg-secondary text-sm text-light"
+      >
+        More works
+      </button>
+      {/if}
     </div>
   </div>
 </div>

@@ -9,6 +9,8 @@ import SiReact from 'svelte-icons-pack/si/SiReact'
 import SiJavascript from 'svelte-icons-pack/si/SiJavascript'
 import SiMongodb from 'svelte-icons-pack/si/SiMongodb'
 import SiFirebase from 'svelte-icons-pack/si/SiFirebase'
+import SiVuedotjs from 'svelte-icons-pack/si/SiVuedotjs'
+import SiSass from 'svelte-icons-pack/si/SiSass'
 
 export const typeScript: Tech = {
   name: 'TypeScript',
@@ -78,4 +80,18 @@ export const firebase: Tech = {
   color: '#fcca3f',
   img: SiFirebase,
   url: 'https://firebase.google.com/'
+}
+
+export const vuejs: Tech = {
+  name: 'Vue.js',
+  color: '#40b883',
+  img: SiVuedotjs,
+  url: 'https://vuejs.org/'
+}
+
+export const sass: Tech = {
+  name: 'Sass',
+  color: '#cf6c9c',
+  img: SiSass,
+  url: 'https://sass-lang.com/'
 }

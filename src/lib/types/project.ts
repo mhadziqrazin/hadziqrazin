@@ -4,6 +4,7 @@ export interface Project {
   description: string
   techs: Tech[]
   url: string
+  children?: Project[]
 }
 
 export interface Tech {
