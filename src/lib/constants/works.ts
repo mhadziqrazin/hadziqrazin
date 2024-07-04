@@ -1,6 +1,7 @@
 import type { Project } from '$lib/types/project'
 import appbilitieaseImage from '$lib/assets/works/appbilitiease.png'
 import mikostopImage from '$lib/assets/works/mikostop.png'
+import uuPediaImage from '$lib/assets/works/uupedia.png'
 import { javaScript, nextjs, reactjs, tailwind, typeScript } from './techs'
 
 
@@ -20,6 +21,16 @@ export const mikostop: Project = {
   url: 'https://mikostop.com'
 }
 
+export const uuPedia: Project = {
+  img: uuPediaImage,
+  name: 'UUPedia',
+  description: 'AI chatbot using Gemini API to ask about laws in Indonesia, in order to participate in Gemastik XVII 2024',
+  techs: [nextjs, typeScript, tailwind],
+  url: 'https://uupedia.vercel.app'
+}
+
 export const works: Project[] = [
-  appbilitiease, mikostop
+  uuPedia,
+  appbilitiease,
+  mikostop
 ]
