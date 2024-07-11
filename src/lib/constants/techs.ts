@@ -11,6 +11,7 @@ import SiMongodb from 'svelte-icons-pack/si/SiMongodb'
 import SiFirebase from 'svelte-icons-pack/si/SiFirebase'
 import SiVuedotjs from 'svelte-icons-pack/si/SiVuedotjs'
 import SiSass from 'svelte-icons-pack/si/SiSass'
+import SiAlgolia from 'svelte-icons-pack/si/SiAlgolia'
 
 export const typeScript: Tech = {
   name: 'TypeScript',
@@ -94,4 +95,11 @@ export const sass: Tech = {
   color: '#cf6c9c',
   img: SiSass,
   url: 'https://sass-lang.com/'
+}
+
+export const algolia: Tech = {
+  name: 'Algolia',
+  color: '#003dff',
+  img: SiAlgolia,
+  url: 'https://www.algolia.com/'
 }

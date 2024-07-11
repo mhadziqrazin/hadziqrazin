@@ -4,7 +4,9 @@ import mikostopImage from '$lib/assets/works/mikostop.png'
 import uuPediaImage from '$lib/assets/works/uupedia.png'
 import blueImage from '$lib/assets/works/blue.png'
 import globalSearchImage from '$lib/assets/works/global-search.png'
-import { javaScript, nextjs, reactjs, sass, tailwind, typeScript, vuejs } from './techs'
+import dropdownChips from '$lib/assets/works/dropdown-chips.png'
+import monthSelector from '$lib/assets/works/month-selector.png'
+import { javaScript, nextjs, reactjs, sass, tailwind, typeScript, vuejs, algolia } from './techs'
 
 
 export const appbilitiease: Project = {
@@ -39,11 +41,25 @@ export const blue: Project = {
   url: 'https://blue.blibli.com',
   children: [
     {
-      img: blueImage,
+      img: globalSearchImage,
       name: 'Global search',
       description: 'Global search helps users to find and navigate through relevant information with ease',
-      techs: [vuejs, javaScript, sass],
+      techs: [algolia, vuejs, javaScript, sass],
       url: 'https://blue.blibli.com',
+    },
+    {
+      img: dropdownChips,
+      name: 'Dropdown with Chips',
+      description: 'A dropdown trigger with chips component instead of text to display the value of the dropdown',
+      techs: [vuejs, javaScript, sass],
+      url: 'https://blue.blibli.com/blue3/components/dropdown/implementation#with-chips',
+    },
+    {
+      img: monthSelector,
+      name: 'Month Selector',
+      description: 'A date picker variant to select month-scale date',
+      techs: [vuejs, javaScript, sass],
+      url: 'https://blue.blibli.com/blue3/components/date-picker/implementation#month-selector',
     }
   ]
 }

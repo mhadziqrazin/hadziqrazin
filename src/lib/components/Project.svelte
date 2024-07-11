@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { Project } from "$lib/types/project"
   import Icon from 'svelte-icons-pack'
+  import ProjectModal from "./ProjectModal.svelte";
 
   export let project: Project
   const techs = project.techs
@@ -8,6 +9,11 @@
 
   const toggleModal = () => {
     isOpen = !isOpen
+    if (isOpen) {
+      document.body.classList.add('body-lock-scroll')
+    } else {
+      document.body.classList.remove('body-lock-scroll')
+    }
   }
 </script>
 
@@ -35,15 +41,18 @@
       {/each}
       {#if project.children?.length || 0 > 0}
       <button
-        on:click={toggleModal}
-       class="ml-auto h-[31px] rounded-full px-4 bg-secondary text-sm text-light"
+        on:click|stopPropagation={toggleModal}
+        class="ml-auto h-[31px] rounded-full px-4 bg-secondary text-sm text-light"
       >
-        More works
+        more..
       </button>
       {/if}
     </div>
   </div>
 </div>
+{#if isOpen && project.children?.length || 0 > 0}
+<ProjectModal onClose={toggleModal} {project} />
+{/if}
 
 <style>
   .tech-space {
