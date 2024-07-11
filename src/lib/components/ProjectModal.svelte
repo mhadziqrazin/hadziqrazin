@@ -30,8 +30,8 @@
         <div class="flex flex-col gap-5">
           {#each project.children || [] as child}
           <hr class="first:hidden border-dark/20" />
-          <div class="grid grid-cols-2 gap-4">
-            <img src={child.img} alt={child.name} class="h-full object-cover rounded-lg" >
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <img src={child.img} alt={child.name} class="h-full object-cover rounded-lg aspect-[15/9] sm:aspect-auto" >
             <div class="flex flex-col gap-2">
               <a href={child.url} target="_blank" title={child.url} class="text-lg font-medium text-dark underline">
                 {child.name}
