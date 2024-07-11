@@ -36,9 +36,12 @@
   <div class="flex flex-grow justify-center">
     <slot />
   </div>
-  <div class="py-8 w-full flex justify-center">
+  <div class="py-8 w-full flex flex-col items-center">
     <p class="text-[0.5rem] lg:text-base font-light text-dark/80">
       Created by <span class="font-semibold">Muhammad Hadziq Razin</span> &copy; {year}. All Rights Reserved.
+    </p>
+    <p class="text-[0.4rem] lg:text-sm font-light text-dark/80">
+      Last updated: 12/07/2024
     </p>
   </div>
 </div>
