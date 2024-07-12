@@ -15,7 +15,7 @@
       use:clickOutside={onClose}
       in:fly={{y: 50, duration: 100, delay: 100}}
       out:fly={{y: 50, duration: 100}}
-      class="relative flex flex-col bg-light rounded-xl overflow-clip w-full h-fit max-w-[600px] max-h-[500px] shadow-lg"
+      class="relative flex flex-col bg-light rounded-xl overflow-clip w-full h-fit max-w-[639px] max-h-[576px] shadow-lg"
     >
       <button
         on:click={onClose}
@@ -24,10 +24,10 @@
         close
       </button>
       <div class="overflow-auto scrollbar-hide p-4">
-        <h2 class="text-2xl mb-6 text-dark">
+        <h2 class="text-2xl mb-6 text-dark mr-[90px]">
           Projects on <span class="font-semibold">{project.name}</span>
         </h2>
-        <div class="flex flex-col gap-5">
+        <div class="flex flex-col gap-10">
           {#each project.children || [] as child}
           <hr class="first:hidden border-dark/20" />
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -36,7 +36,7 @@
               <a href={child.url} target="_blank" title={child.url} class="text-lg font-medium text-dark underline">
                 {child.name}
               </a>
-              <p class="font-light text-dark/70">
+              <p class="font-light text-dark/70 pb-4">
                 {child.description}
               </p>
               <div class="flex gap-2 h-full items-end">
