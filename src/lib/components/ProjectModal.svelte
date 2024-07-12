@@ -8,7 +8,7 @@
   export let project: Project
 </script>
 
-<div in:fade={{duration: 100}} out:fade={{duration: 100, delay: 100}} class="fixed bg-black/70 top-0 left-0 h-screen overflow-hidden w-full z-10">
+<div in:fade={{duration: 100}} out:fade={{duration: 100, delay: 100}} class="fixed bg-black/70 top-0 left-0 height-screen overflow-hidden w-full z-10">
   <div class="h-full flex justify-center items-end sm:items-center">
     <!-- MODAL -->
     <div
@@ -58,3 +58,10 @@
     </div>
   </div>
 </div>
+
+<style>
+  .height-screen {
+    height: 100vh;
+    height: 100svh;
+  }
+</style>
