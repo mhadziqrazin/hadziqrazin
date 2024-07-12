@@ -2,6 +2,7 @@
   import type { Project } from "$lib/types/project"
   import Icon from 'svelte-icons-pack'
   import ProjectModal from "./ProjectModal.svelte";
+  import { onDestroy } from "svelte";
 
   export let project: Project
   const techs = project.techs
@@ -15,6 +16,10 @@
       document.body.classList.remove('body-lock-scroll')
     }
   }
+
+  onDestroy(() => {
+    if (typeof document !== 'undefined') document.body.classList.remove('body-lock-scroll')
+  })
 </script>
 
 <div class="relative flex flex-col min-h-full w-[300px] overflow-hidden shadow-lg hover:shadow-xl duration-200 rounded-xl bg-white/70 border-[1px] border-dark/[0.13]">
