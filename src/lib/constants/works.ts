@@ -36,7 +36,7 @@ export const uuPedia: Project = {
 export const blue: Project = {
   img: blueImage,
   name: 'BLUE',
-  description: 'BLUE (Blibli Unifying Elements) is the Blibli\'s design system containing reusable components and design standard guidelines to build Blibil\'s digital products',
+  description: 'BLUE (Blibli Unifying Elements) is the Blibli\'s design system containing reusable components and design standard guidelines to build Blibli\'s digital products',
   techs: [vuejs, javaScript, sass],
   url: 'https://blue.blibli.com',
   children: [

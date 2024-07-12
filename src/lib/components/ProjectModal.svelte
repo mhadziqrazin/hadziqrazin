@@ -9,24 +9,26 @@
 </script>
 
 <div in:fade={{duration: 100}} out:fade={{duration: 100, delay: 100}} class="fixed bg-black/70 top-0 left-0 h-screen overflow-hidden w-full z-10">
-  <div class="h-full grid place-items-center">
+  <div class="h-full flex justify-center items-end sm:items-center">
     <!-- MODAL -->
     <div
       use:clickOutside={onClose}
       in:fly={{y: 50, duration: 100, delay: 100}}
       out:fly={{y: 50, duration: 100}}
-      class="relative flex flex-col bg-light rounded-xl overflow-clip w-full h-fit max-w-[639px] max-h-[576px] shadow-lg"
+      class="flex flex-col bg-light rounded-t-xl sm:rounded-b-xl overflow-clip w-full max-w-[639px] h-fit max-h-[85%] sm:max-h-[576px] shadow-lg"
     >
-      <button
-        on:click={onClose}
-        class="absolute top-4 right-4 h-[31px] px-4 bg-secondary text-light rounded-full"
-      >
-        close
-      </button>
-      <div class="overflow-auto scrollbar-hide p-4">
-        <h2 class="text-2xl mb-6 text-dark mr-[90px]">
+      <div class="flex justify-between items-center gap-4 p-4">
+        <h2 class="text-2xl text-dark">
           Projects on <span class="font-semibold">{project.name}</span>
         </h2>
+        <button
+          on:click={onClose}
+          class="h-[31px] px-4 bg-secondary text-light rounded-full"
+        >
+          close
+        </button>
+      </div>
+      <div class="overflow-auto scrollbar-hide p-4">
         <div class="flex flex-col gap-10">
           {#each project.children || [] as child}
           <hr class="first:hidden border-dark/20" />
