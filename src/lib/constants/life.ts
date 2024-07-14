@@ -1,7 +1,7 @@
 import type { Project } from '$lib/types/project'
 import pemburuImage from '$lib/assets/life/pemburu.png'
 import cssImage from '$lib/assets/life/css.png'
-import meetTheCastImage from '$lib/assets/life/meet-the-cast.png'
+import meetTheCastImage from '$lib/assets/life/meet-the-cast.jpg'
 import aDayInMyLifeImage from '$lib/assets/life/a-day-in-my-life.png'
 
 
