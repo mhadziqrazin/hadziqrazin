@@ -34,7 +34,7 @@
     <IconSocial
       social={BsFileEarmarkPdf}
       title={"CV"}
-      link={"https://drive.google.com/file/d/1g5G_5FYGJ3BecSprw9dtYSoHvAhMc2ER/view?usp=sharing"}
+      link={"https://drive.google.com/file/d/1AJ0UqAdFq0kocoVAbHi9SstyV4ZwDjeF/view?usp=share_link"}
     />
   </button>
   <div in:fly={{x:-10, duration: 1000, delay: 800}}>
