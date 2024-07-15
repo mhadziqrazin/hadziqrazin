@@ -6,6 +6,7 @@
   import SiGmail from "svelte-icons-pack/si/SiGmail"
   import BsFileEarmarkPdf from "svelte-icons-pack/bs/BsFileEarmarkPdf"
   import { fly } from "svelte/transition"
+  import cv from '$lib/assets/CV - Muhammad HADZIQ Razin.pdf'
 </script>
 
 <div class="w-1/2 flex self-center justify-between lg:justify-around">
@@ -34,7 +35,7 @@
     <IconSocial
       social={BsFileEarmarkPdf}
       title={"CV"}
-      link={"https://drive.google.com/file/d/1AJ0UqAdFq0kocoVAbHi9SstyV4ZwDjeF/view?usp=share_link"}
+      link={cv}
     />
   </button>
   <div in:fly={{x:-10, duration: 1000, delay: 800}}>
