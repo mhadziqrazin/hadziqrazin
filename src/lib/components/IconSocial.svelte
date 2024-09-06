@@ -8,10 +8,10 @@
 
 <div class="opacity-30 hover:cursor-pointer hover:opacity-75 transition-all duration-200">
   <a href={link} target="_blank">
-    <div class="hidden lg:block">
+    <div class="hidden sm:block">
       <Icon src={social} size="25" {title} />
     </div>
-    <div class="block lg:hidden">
+    <div class="block sm:hidden">
       <Icon src={social} size="17" {title} />
     </div>
   </a>

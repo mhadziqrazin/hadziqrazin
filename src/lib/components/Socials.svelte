@@ -9,7 +9,7 @@
   import cv from '$lib/assets/CV - Muhammad HADZIQ Razin.pdf'
 </script>
 
-<div class="w-1/2 flex self-center justify-between lg:justify-around">
+<div class="w-1/2 flex self-center justify-between sm:justify-around">
   <div in:fly={{x:-10, duration: 1000, delay: 400}}>
     <IconSocial
       social={BsGithub}

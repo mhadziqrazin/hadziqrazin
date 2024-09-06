@@ -9,7 +9,7 @@
   let year = (new Date()).getFullYear()
 </script>
 
-<div class="mx-auto overflow-x-clip height-screen flex flex-col justify-center">
+<div class="mx-auto overflow-x-clip flex flex-col justify-center">
   {#if !!$navigating}
     <div in:fly={{y:-20, duration: 1000}} class="absolute top-[85px] left-1/2 -translate-x-1/2 -translate-y-1/2">
       <SpinLine size={35} color={"#2B2E4AE0"} />
@@ -33,7 +33,7 @@
       </ul>
     </nav>
   {/if}
-  <div class="flex flex-grow justify-center">
+  <div class="flex flex-col flex-grow items-center gap-10">
     <slot />
   </div>
   <div class="py-8 w-full flex flex-col items-center">
@@ -51,10 +51,5 @@
     color: #E84545;
     font-weight: 600;
     opacity: 1;
-  }
-
-  .height-screen {
-    min-height: 100vh;
-    min-height: 100svh;
   }
 </style>
