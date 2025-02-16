@@ -39,7 +39,7 @@
       <!-- DESCRIPTION -->
       <p in:fade={{duration: 1000, delay: 200}} class="text-base/7 lg:text-2xl/9 font-medium text-dark/80">
     
-        &bullet;an undergraduate
+        &bullet;a final year undergraduate
     
         <a href="https://cs.ui.ac.id" target="_blank" class="underline decoration-[1.5px] md:decoration-[2.2px]">
           computer science
@@ -52,8 +52,8 @@
     
         who's passionate about
         <span class="text-dark/90 font-semibold">software engineering</span>.<br/>
-        &bullet;currently work as a
-        <span class="text-dark/90 font-semibold">UX Engineer Intern</span>
+        &bullet;an
+        <span class="text-dark/90 font-semibold">Ex-UX Engineer Intern</span>
         at
 
         <a href="https://blibli.com" target="_blank" class="underline decoration-[1.5px] md:decoration-[2.2px]">

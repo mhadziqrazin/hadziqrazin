@@ -41,7 +41,7 @@
       Created by <span class="font-semibold">Muhammad Hadziq Razin</span> &copy; {year}. All Rights Reserved.
     </p>
     <p class="text-[0.4rem] lg:text-sm font-light text-dark/80">
-      Last updated: 12/07/2024
+      Last updated: 16/02/2025
     </p>
   </div>
 </div>
