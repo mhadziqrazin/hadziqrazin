@@ -2,6 +2,7 @@
   import type { Project } from "$lib/types/project"
   import Icon from 'svelte-icons-pack'
   import ProjectModal from "./ProjectModal.svelte";
+  import Badge from "./Badge.svelte"
   import { onDestroy } from "svelte";
 
   export let project: Project
@@ -28,9 +29,21 @@
 
   <!-- BODY -->
   <div class="min-h-full p-4 flex flex-col gap-2">
-    <a href={project.url} target="_blank" title={project.url} class="font-semibold text-xl text-dark underline w-fit">
-      {project.name}
-    </a>
+    <!-- TITLE -->
+    <div class="flex items-center justify-between">
+      {#if project.url}
+        <a href={project.url} target="_blank" title={project.url} class="font-semibold text-xl text-dark underline w-fit">
+          {project.name}
+        </a>
+      {:else}
+        <div class="font-semibold text-xl text-dark w-fit">
+          {project.name}
+        </div>
+      {/if}
+      {#if project.ongoing}
+        <Badge className="bg-green-500">ongoing</Badge>
+      {/if}
+    </div>
     <p class="text-dark/70" class:tech-space={techs.length > 0 || project.children?.length || 0 > 0}>
       {project.description}
     </p>
@@ -38,19 +51,16 @@
     <!-- TECHS -->
     <div class="w-full absolute bottom-4 left-0 px-4 flex gap-2">
       {#each techs as tech}
-      <a href={tech.url} target="_blank">
-        <div class="flex gap-1 p-[9px] rounded-full hover:shadow-md duration-200" style={`background: ${tech.color}`}>
-          <Icon src={tech.img} color={'#fff'} title={tech.name} size={13} />
-        </div>
-      </a>
+        <a href={tech.url} target="_blank">
+          <div class="flex gap-1 p-[9px] rounded-full hover:shadow-md duration-200" style={`background: ${tech.color}`}>
+            <Icon src={tech.img} color={'#fff'} title={tech.name} size={13} />
+          </div>
+        </a>
       {/each}
       {#if project.children?.length || 0 > 0}
-      <button
-        on:click|stopPropagation={toggleModal}
-        class="ml-auto h-[31px] rounded-full px-4 bg-secondary text-sm text-light"
-      >
-        more..
-      </button>
+        <button class="ml-auto" on:click|stopPropagation={toggleModal}>
+          <Badge>more..</Badge>
+        </button>
       {/if}
     </div>
   </div>

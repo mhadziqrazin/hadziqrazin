@@ -3,6 +3,7 @@
   import type { Project } from "$lib/types/project";
   import { fade, fly } from "svelte/transition"
   import { clickOutside } from "$lib/assets/utils/useClickOutside";
+  import Badge from "$lib/components/Badge.svelte"
 
   export let onClose: () => void
   export let project: Project
@@ -21,11 +22,8 @@
         <h2 class="text-2xl text-dark">
           Projects on <span class="font-semibold">{project.name}</span>
         </h2>
-        <button
-          on:click={onClose}
-          class="h-[31px] px-4 bg-secondary text-light rounded-full"
-        >
-          close
+        <button on:click={onClose}>
+          <Badge>close</Badge>
         </button>
       </div>
       <div class="overflow-auto scrollbar-hide p-4">

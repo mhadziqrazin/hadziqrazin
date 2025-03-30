@@ -3,7 +3,8 @@ export interface Project {
   name: string
   description: string
   techs: Tech[]
-  url: string
+  url?: string
+  ongoing?: boolean
   children?: Project[]
 }
 

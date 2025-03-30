@@ -6,6 +6,7 @@ import blueImage from '$lib/assets/works/blue.png'
 import globalSearchImage from '$lib/assets/works/global-search.png'
 import dropdownChips from '$lib/assets/works/dropdown-chips.png'
 import monthSelector from '$lib/assets/works/month-selector.png'
+import pejuangOsnImage from '$lib/assets/works/pejuang-osn.png'
 import { javaScript, nextjs, reactjs, sass, tailwind, typeScript, vuejs, algolia } from './techs'
 
 
@@ -64,8 +65,18 @@ export const blue: Project = {
   ]
 }
 
+export const pejuangOsn: Project = {
+  img: pejuangOsnImage,
+  name: 'Pejuang OSN',
+  description: 'E-learning platform by PT. Pejuang Indonesia Cerdas for students to prepare for the National Science Olympiad with features like masterclass, quiz, and exam-question bank',
+  techs: [nextjs, typeScript, tailwind],
+  url: '',
+  ongoing: true
+}
+
 export const works: Project[] = [
   blue,
+  pejuangOsn,
   uuPedia,
   appbilitiease,
   mikostop
