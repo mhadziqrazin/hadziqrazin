@@ -4,6 +4,7 @@ import personalImage from '$lib/assets/projects/personal.png'
 import airbnbImage from '$lib/assets/projects/airbnb.png'
 import iniWebImage from '$lib/assets/projects/iniWeb.png'
 import ptiImage from '$lib/assets/projects/pti.png'
+import vocabularichImage from '$lib/assets/projects/vocabularich.png'
 import { firebase, javaScript, mongoDb, nextjs, postgreSql, prisma, svelte, tailwind, typeScript } from './techs'
 
 export const toDo: Project = {
@@ -46,6 +47,14 @@ export const pti: Project = {
   url: 'https://pti-weather-hadziq.vercel.app'
 }
 
+export const vocabularich: Project = {
+  img: vocabularichImage,
+  name: 'Vocabularich',
+  description: "A dictionary game website using Gemini API where you have to choose the closest meaning of a word.",
+  techs: [nextjs, typeScript, tailwind],
+  url: 'https://vocabularich.vercel.app'
+}
+
 export const projects: Project[] = [
-  personal, toDo, airbnb, iniWeb, pti
+  personal, toDo, vocabularich, airbnb, iniWeb, pti
 ]
