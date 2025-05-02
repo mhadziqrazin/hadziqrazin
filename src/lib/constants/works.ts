@@ -6,8 +6,26 @@ import blueImage from '$lib/assets/works/blue.png'
 import globalSearchImage from '$lib/assets/works/global-search.png'
 import dropdownChips from '$lib/assets/works/dropdown-chips.png'
 import monthSelector from '$lib/assets/works/month-selector.png'
+import coverageImage from '$lib/assets/works/coverage.png'
+import eslintPrettierImage from '$lib/assets/works/eslint-prettier.png'
+import moEngageImage from '$lib/assets/works/mo-engage.png'
+import changelogScriptImage from '$lib/assets/works/changelog-script.png'
 import pejuangOsnImage from '$lib/assets/works/pejuang-osn.png'
-import { javaScript, nextjs, reactjs, sass, tailwind, typeScript, vuejs, algolia } from './techs'
+import {
+  javaScript,
+  nextjs,
+  reactjs,
+  sass,
+  tailwind,
+  typeScript,
+  vuejs,
+  algolia,
+  playwright,
+  eslint,
+  prettier,
+  html,
+  css
+} from './techs'
 
 
 export const appbilitiease: Project = {
@@ -46,6 +64,34 @@ export const blue: Project = {
       name: 'Global search',
       description: 'Global search helps users to find and navigate through relevant information with ease',
       techs: [algolia, vuejs, javaScript, sass],
+      url: 'https://blue.blibli.com',
+    },
+    {
+      img: coverageImage,
+      name: 'Coverage Score',
+      description: 'Improved integration test coverage up to 98+% for 38 components using Playwright ',
+      techs: [playwright, javaScript],
+      url: 'https://blue.blibli.com/blue3/components/button/implementation',
+    },
+    {
+      img: changelogScriptImage,
+      name: 'Changelog Generator Script',
+      description: 'Created changelog update automation script that reduced workload by up to 2 hours using Node.js',
+      techs: [javaScript],
+      url: 'https://blue.blibli.com/blue3/components/button/changelog',
+    },
+    {
+      img: eslintPrettierImage,
+      name: 'ESLint & Prettier',
+      description: 'Implemented ESLint and Prettier inside the BLUE source code to enhance clean code',
+      techs: [eslint, prettier],
+      url: 'https://blue.blibli.com',
+    },
+    {
+      img: moEngageImage,
+      name: 'MoEngage',
+      description: 'Created Customer Satisfaction Survey using MoEngage, HTML, CSS, Javascript, and Blibli’s component class',
+      techs: [javaScript, html, css],
       url: 'https://blue.blibli.com',
     },
     {

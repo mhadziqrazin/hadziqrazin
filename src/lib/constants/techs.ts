@@ -12,6 +12,11 @@ import SiFirebase from 'svelte-icons-pack/si/SiFirebase'
 import SiVuedotjs from 'svelte-icons-pack/si/SiVuedotjs'
 import SiSass from 'svelte-icons-pack/si/SiSass'
 import SiAlgolia from 'svelte-icons-pack/si/SiAlgolia'
+import SiPlaywright from 'svelte-icons-pack/si/SiPlaywright'
+import SiEslint from 'svelte-icons-pack/si/SiEslint'
+import SiPrettier from 'svelte-icons-pack/si/SiPrettier'
+import SiHtml from 'svelte-icons-pack/si/SiHtml5'
+import SiCss from 'svelte-icons-pack/si/SiCss3'
 
 export const typeScript: Tech = {
   name: 'TypeScript',
@@ -102,4 +107,39 @@ export const algolia: Tech = {
   color: '#003dff',
   img: SiAlgolia,
   url: 'https://www.algolia.com/'
+}
+
+export const playwright: Tech = {
+  name: 'Playwright',
+  color: '#45ba4b',
+  img: SiPlaywright,
+  url: 'https://playwright.dev/'
+}
+
+export const eslint: Tech = {
+  name: 'ESLint',
+  color: '#4539bc',
+  img: SiEslint,
+  url: 'https://eslint.org/'
+}
+
+export const prettier: Tech = {
+  name: 'Prettier',
+  color: '#f7b126',
+  img: SiPrettier,
+  url: 'https://prettier.io/'
+}
+
+export const html: Tech = {
+  name: 'HTML',
+  color: '#f06629',
+  img: SiHtml,
+  url: 'https://www.w3schools.com/Html/'
+}
+
+export const css: Tech = {
+  name: 'CSS',
+  color: '#32aadc',
+  img: SiCss,
+  url: 'https://www.w3schools.com/css/'
 }
