@@ -42,13 +42,13 @@
         &bullet;a final year undergraduate
     
         <a href="https://cs.ui.ac.id" target="_blank" class="underline decoration-[1.5px] md:decoration-[2.2px]">
-          computer science
+          Computer Science
         </a>
     
-        student at
+        student at the
     
         <a href="https://ui.ac.id" target="_blank" class="underline decoration-[1.5px] md:decoration-[2.2px]">
-          Universitas Indonesia</a>,
+          University of Indonesia</a>,
     
         who's passionate about
         <span class="text-dark/90 font-semibold">software engineering</span>.<br/>

@@ -41,7 +41,7 @@ export const aDayInMyLife: Project = {
 export const gameMaster: Project = {
   img: gameMasterImage,
   name: 'Game Master',
-  description: 'Chosen to be a game master and performed in front of 250+ employees at the 2024 Blibli Platform\'s end-year gathering event during UX Engineer internship',
+  description: 'Chosen to be a game master and performed in front of 250+ employees at the 2024 Blibli Platform\'s end-year gathering event during UX Engineering internship',
   techs: [],
   url: 'https://www.instagram.com/bliblidesign/reel/DEM5BGfJm8S/'
 }
