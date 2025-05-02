@@ -32,7 +32,7 @@
     <!-- TITLE -->
     <div class="flex items-center justify-between">
       {#if project.url}
-        <a href={project.url} target="_blank" title={project.url} class="font-semibold text-xl text-dark underline w-fit">
+        <a href={project.url} target="_blank" rel="noopener" title={project.url} class="font-semibold text-xl text-dark underline w-fit">
           {project.name}
         </a>
       {:else}
