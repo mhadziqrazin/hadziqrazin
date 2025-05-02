@@ -9,12 +9,21 @@
   const techs = project.techs
   $: isOpen = false
 
+  const openModal = () => {
+    isOpen = true
+    document.body.classList.add('body-lock-scroll')
+  }
+
+  const closeModal = () => {
+    isOpen = false
+    document.body.classList.remove('body-lock-scroll')
+  }
+
   const toggleModal = () => {
-    isOpen = !isOpen
     if (isOpen) {
-      document.body.classList.add('body-lock-scroll')
+      closeModal()
     } else {
-      document.body.classList.remove('body-lock-scroll')
+      openModal()
     }
   }
 
@@ -66,7 +75,7 @@
   </div>
 </div>
 {#if isOpen && project.children?.length || 0 > 0}
-<ProjectModal onClose={toggleModal} {project} />
+<ProjectModal onClose={closeModal} {project} />
 {/if}
 
 <style>
