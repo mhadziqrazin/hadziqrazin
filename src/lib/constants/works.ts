@@ -70,8 +70,7 @@ export const pejuangOsn: Project = {
   name: 'Pejuang OSN',
   description: 'E-learning platform by PT. Pejuang Indonesia Cerdas for students to prepare for the National Science Olympiad with features like masterclass, quiz, and exam-question bank',
   techs: [nextjs, typeScript, tailwind],
-  url: '',
-  ongoing: true
+  url: 'https://pejuangosn.com',
 }
 
 export const works: Project[] = [
