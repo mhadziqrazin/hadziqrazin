@@ -85,14 +85,12 @@ export const blue: Project = {
       name: 'ESLint & Prettier',
       description: 'Implemented ESLint and Prettier inside the BLUE source code to enhance clean code',
       techs: [eslint, prettier],
-      url: 'https://blue.blibli.com',
     },
     {
       img: moEngageImage,
       name: 'MoEngage',
       description: 'Created Customer Satisfaction Survey using MoEngage, HTML, CSS, Javascript, and Blibli’s component class',
       techs: [javaScript, html, css],
-      url: 'https://blue.blibli.com',
     },
     {
       img: dropdownChips,

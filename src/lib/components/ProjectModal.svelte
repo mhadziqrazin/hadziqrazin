@@ -29,27 +29,33 @@
       <div class="overflow-auto scrollbar-hide p-4">
         <div class="flex flex-col gap-10">
           {#each project.children || [] as child}
-          <hr class="first:hidden border-dark/20" />
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <img src={child.img} alt={child.name} class="object-cover rounded-lg aspect-[15/9]" >
-            <div class="flex flex-col gap-2">
-              <a href={child.url} target="_blank" title={child.url} class="text-lg font-medium text-dark underline">
-                {child.name}
-              </a>
-              <p class="font-light text-dark/70 pb-4">
-                {child.description}
-              </p>
-              <div class="flex gap-2 h-full items-end">
-                {#each child.techs as tech}
-                <a href={tech.url} target="_blank">
-                  <div class="flex gap-1 p-[9px] rounded-full hover:shadow-md duration-200" style={`background: ${tech.color}`}>
-                    <Icon src={tech.img} color={'#fff'} title={tech.name} size={13} />
+            <hr class="first:hidden border-dark/20" />
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <img src={child.img} alt={child.name} class="object-cover rounded-lg aspect-[15/9]" >
+              <div class="flex flex-col gap-2">
+                {#if child.url}
+                  <a href={child.url} target="_blank" rel="noopener" title={child.url} class="text-lg font-medium text-dark underline">
+                    {child.name}
+                  </a>
+                {:else}
+                  <div class="text-lg font-medium text-dark">
+                    {child.name}
                   </div>
-                </a>
-                {/each}
+                {/if}
+                <p class="font-light text-dark/70 pb-4">
+                  {child.description}
+                </p>
+                <div class="flex gap-2 h-full items-end">
+                  {#each child.techs as tech}
+                    <a href={tech.url} target="_blank">
+                      <div class="flex gap-1 p-[9px] rounded-full hover:shadow-md duration-200" style={`background: ${tech.color}`}>
+                        <Icon src={tech.img} color={'#fff'} title={tech.name} size={13} />
+                      </div>
+                    </a>
+                  {/each}
+                </div>
               </div>
             </div>
-          </div>
           {/each}
         </div>
       </div>
