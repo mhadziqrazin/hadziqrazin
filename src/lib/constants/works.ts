@@ -41,7 +41,6 @@ export const mikostop: Project = {
   name: 'Mikostop',
   description: 'Invasive Pulmonary Aspergillosis (IPA) Scoring website owned by Indonesia Pulmonary Mycoses Centre (IPMC)',
   techs: [reactjs, javaScript],
-  url: 'https://mikostop.com'
 }
 
 export const uuPedia: Project = {

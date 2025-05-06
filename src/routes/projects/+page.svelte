@@ -3,4 +3,4 @@
   import ShowcasePage from "$lib/components/sections/ShowcasePage.svelte"
 </script>
 
-<ShowcasePage data={projects} title={'Projects'} subtitle={'Some projects for learning purposes'}/>
+<ShowcasePage data={projects} title={'Projects'} subtitle={'Self-projects for learning purposes'}/>
