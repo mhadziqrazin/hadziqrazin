@@ -7,6 +7,14 @@
   $: path = $page.route.id
 
   let year = (new Date()).getFullYear()
+
+  page.subscribe(($page) => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('config', 'G-6YLSFS47T5', {
+        page_path: $page.url.pathname,
+      });
+    }
+  });
 </script>
 
 <div class="mx-auto overflow-x-clip height-screen flex flex-col justify-center">
