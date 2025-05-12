@@ -14,9 +14,9 @@
     document.body.classList.add('body-lock-scroll')
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('event', 'click', {
-        event_category: 'modal',
-        event_label: 'project modal',
-      });
+        event_category: 'modal_click',
+        event_label: `Modal ${project.name}`,
+      })
     }
   }
 
@@ -30,6 +30,15 @@
       closeModal()
     } else {
       openModal()
+    }
+  }
+
+  const trackProjectLink = () => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'click', {
+        event_category: 'link_click',
+        event_label: `Link ${project.name}`,
+      })
     }
   }
 
@@ -47,7 +56,7 @@
     <!-- TITLE -->
     <div class="flex items-center justify-between">
       {#if project.url}
-        <a href={project.url} target="_blank" rel="noopener" title={project.url} class="font-semibold text-xl text-dark underline w-fit">
+        <a href={project.url} target="_blank" rel="noopener" on:click={trackProjectLink} title={project.url} class="font-semibold text-xl text-dark underline w-fit">
           {project.name}
         </a>
       {:else}
