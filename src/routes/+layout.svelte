@@ -10,7 +10,7 @@
 
   page.subscribe(($page) => {
     if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('config', 'G-6YLSFS47T5', {
+      window.gtag('config', 'G-GFBFGTQRGQ', {
         page_path: $page.url.pathname,
       });
     }
