@@ -7,5 +7,6 @@ export enum ClickCategory {
   LINK = 'link_click',
   MODAL = 'modal_click',
   SHOWMORE = 'showmore_click',
-  SHOWLESS = 'showless_click'
+  SHOWLESS = 'showless_click',
+  SOCIAL = 'social_click'
 }
