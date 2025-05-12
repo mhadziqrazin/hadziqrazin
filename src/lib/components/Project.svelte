@@ -4,6 +4,8 @@
   import ProjectModal from "./ProjectModal.svelte";
   import Badge from "./Badge.svelte"
   import { onDestroy } from "svelte";
+  import { ClickCategory } from "$lib/types/event";
+  import { trackClick } from "$lib/utils/tracker";
 
   export let project: Project
   const techs = project.techs
@@ -12,12 +14,10 @@
   const openModal = () => {
     isOpen = true
     document.body.classList.add('body-lock-scroll')
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'click', {
-        event_category: 'modal_click',
-        event_label: `Modal ${project.name}`,
-      })
-    }
+    trackClick({
+      category: ClickCategory.MODAL,
+      label: project.name
+    })
   }
 
   const closeModal = () => {
@@ -34,12 +34,10 @@
   }
 
   const trackProjectLink = () => {
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'click', {
-        event_category: 'link_click',
-        event_label: `Link ${project.name}`,
-      })
-    }
+    trackClick({
+      category: ClickCategory.LINK,
+      label: project.name
+    })
   }
 
   onDestroy(() => {

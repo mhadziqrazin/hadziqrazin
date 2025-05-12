@@ -5,6 +5,8 @@
   import Icon from 'svelte-icons-pack/Icon.svelte'
   import HiOutlineChevronDoubleDown from "svelte-icons-pack/hi/HiOutlineChevronDoubleDown"
   import HiOutlineChevronDoubleUp from "svelte-icons-pack/hi/HiOutlineChevronDoubleUp"
+  import { trackClick } from "$lib/utils/tracker"
+  import { ClickCategory } from "$lib/types/event"
 
   export let data: ProjectType[]
   export let title: string
@@ -16,6 +18,17 @@
 
   function toggleView() {
     more = !more
+    if (more) {
+      trackClick({
+        category: ClickCategory.SHOWMORE,
+        label: title
+      })
+    } else {
+      trackClick({
+        category: ClickCategory.SHOWLESS,
+        label: title
+      })
+    }
   }
 </script>
 

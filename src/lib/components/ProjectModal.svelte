@@ -4,9 +4,18 @@
   import { fade, fly } from "svelte/transition"
   import { clickOutside } from "$lib/assets/utils/useClickOutside";
   import Badge from "$lib/components/Badge.svelte"
+  import { trackClick } from "$lib/utils/tracker"
+  import { ClickCategory } from "$lib/types/event"
 
   export let onClose: () => void
   export let project: Project
+
+  const trackModalLink = (name: string) => {
+    trackClick({
+      category: ClickCategory.LINK,
+      label: name
+    })
+  }
 </script>
 
 <div in:fade={{duration: 100}} out:fade={{duration: 100, delay: 100}} class="fixed bg-black/70 top-0 left-0 height-screen overflow-hidden w-full z-10">
@@ -34,7 +43,7 @@
               <img src={child.img} alt={child.name} class="object-cover rounded-lg aspect-[15/9]" >
               <div class="flex flex-col gap-2">
                 {#if child.url}
-                  <a href={child.url} target="_blank" rel="noopener" title={child.url} class="text-lg font-medium text-dark underline">
+                  <a href={child.url} target="_blank" rel="noopener" on:click={() => trackModalLink(child.name)} title={child.url} class="text-lg font-medium text-dark underline">
                     {child.name}
                   </a>
                 {:else}
