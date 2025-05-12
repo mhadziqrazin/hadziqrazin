@@ -12,6 +12,12 @@
   const openModal = () => {
     isOpen = true
     document.body.classList.add('body-lock-scroll')
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'click', {
+        event_category: 'modal',
+        event_label: 'project modal',
+      });
+    }
   }
 
   const closeModal = () => {
