@@ -11,6 +11,13 @@ import eslintPrettierImage from '$lib/assets/works/eslint-prettier.png'
 import moEngageImage from '$lib/assets/works/mo-engage.png'
 import changelogScriptImage from '$lib/assets/works/changelog-script.png'
 import pejuangOsnImage from '$lib/assets/works/pejuang-osn.png'
+import rsummiImage from '$lib/assets/works/rsummi.png'
+import rsummiPharamcistImage from '$lib/assets/works/rsummi-pharmacist.png'
+import rsummiAdminImage from '$lib/assets/works/rsummi-admin.png'
+import rsummiLocationImage from '$lib/assets/works/rsummi-location.png'
+import rsummiLogsImage from '$lib/assets/works/rsummi-logs.png'
+import rsummiPickupImage from '$lib/assets/works/rsummi-pickup.png'
+import rsummiScanImage from '$lib/assets/works/rsummi-scan.png'
 import {
   javaScript,
   nextjs,
@@ -24,11 +31,12 @@ import {
   eslint,
   prettier,
   html,
-  css
+  css,
+  express
 } from './techs'
 
 
-export const appbilitiease: Project = {
+const appbilitiease: Project = {
   img: appbilitieaseImage,
   name: 'Appbilitiease',
   description: 'Disability support website in order to participate in Gemastik XVI 2023',
@@ -36,14 +44,14 @@ export const appbilitiease: Project = {
   url: 'https://appbilitiease.vercel.app'
 }
 
-export const mikostop: Project = {
+const mikostop: Project = {
   img: mikostopImage,
   name: 'Mikostop',
   description: 'Invasive Pulmonary Aspergillosis (IPA) Scoring website owned by Indonesia Pulmonary Mycoses Centre (IPMC)',
   techs: [reactjs, javaScript],
 }
 
-export const uuPedia: Project = {
+const uuPedia: Project = {
   img: uuPediaImage,
   name: 'UUPedia',
   description: 'AI chatbot using Gemini API to ask about laws in Indonesia, in order to participate in Gemastik XVII 2024',
@@ -51,7 +59,7 @@ export const uuPedia: Project = {
   url: 'https://uupedia.vercel.app'
 }
 
-export const blue: Project = {
+const blue: Project = {
   img: blueImage,
   name: 'BLUE',
   description: 'BLUE (Blibli Unifying Elements) is the Blibli\'s design system containing reusable components and design standard guidelines to build Blibli\'s digital products',
@@ -108,7 +116,7 @@ export const blue: Project = {
   ]
 }
 
-export const pejuangOsn: Project = {
+const pejuangOsn: Project = {
   img: pejuangOsnImage,
   name: 'Pejuang OSN',
   description: 'E-learning platform by PT. Pejuang Indonesia Cerdas for students to prepare for the National Science Olympiad with features like masterclass, quiz, and exam-question bank',
@@ -116,8 +124,55 @@ export const pejuangOsn: Project = {
   url: 'https://pejuangosn.com',
 }
 
+const rsummi: Project = {
+  img: rsummiImage,
+  name: 'Meds Vending Machine',
+  description: 'Vending machine-style system by RS UMMI Bogor that lets patients skip the pharmacy queue and helps pharmacists manage medications more efficiently',
+  techs: [nextjs, express, typeScript, tailwind],
+  url: 'https://ppl-c6.rsummi.co.id',
+  children: [
+    {
+      img: rsummiPharamcistImage,
+      name: 'Manage Medications',
+      description: 'Pharmacists can load medications into the vending machine and mark them as ready to send a QR code to the patient',
+      techs: [],
+    },
+    {
+      img: rsummiLocationImage,
+      name: 'Medications Location',
+      description: 'Pharmacists can select medications\' location in the vending machine',
+      techs: [],
+    },
+    {
+      img: rsummiScanImage,
+      name: 'Scan QR Code',
+      description: 'Patients can scan their QR code to pick up medications',
+      techs: [],
+    },
+    {
+      img: rsummiPickupImage,
+      name: 'Pickup Medications',
+      description: 'Staff and patients can instantly see where a medication is located',
+      techs: [],
+    },
+    {
+      img: rsummiAdminImage,
+      name: 'Manage Pharmacists',
+      description: 'Admin can manage pharmacists account',
+      techs: [],
+    },
+    {
+      img: rsummiLogsImage,
+      name: 'Monitor Activity',
+      description: 'Admin can monitor activites within the system',
+      techs: [],
+    },
+  ]
+}
+
 export const works: Project[] = [
   blue,
+  rsummi,
   pejuangOsn,
   uuPedia,
   appbilitiease,

@@ -17,6 +17,7 @@ import SiEslint from 'svelte-icons-pack/si/SiEslint'
 import SiPrettier from 'svelte-icons-pack/si/SiPrettier'
 import SiHtml from 'svelte-icons-pack/si/SiHtml5'
 import SiCss from 'svelte-icons-pack/si/SiCss3'
+import SiExpress from 'svelte-icons-pack/si/SiExpress'
 
 export const typeScript: Tech = {
   name: 'TypeScript',
@@ -142,4 +143,11 @@ export const css: Tech = {
   color: '#32aadc',
   img: SiCss,
   url: 'https://www.w3schools.com/css/'
+}
+
+export const express: Tech = {
+  name: 'Express.js',
+  color: '#9bc455',
+  img: SiExpress,
+  url: 'https://expressjs.com/'
 }

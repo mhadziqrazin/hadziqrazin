@@ -49,7 +49,7 @@
       Created by <span class="font-semibold">Muhammad Hadziq Razin</span> &copy; {year}. All Rights Reserved.
     </p>
     <p class="text-[0.5rem] lg:text-sm font-light text-dark/80">
-      Last updated: May 12, 2025
+      Last updated: May 23, 2025
     </p>
   </div>
 </div>
