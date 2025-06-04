@@ -158,7 +158,7 @@ const rsummi: Project = {
     {
       img: rsummiAdminImage,
       name: 'Manage Pharmacists',
-      description: 'Admin can manage pharmacists account',
+      description: 'Admin can manage pharmacists\' account',
       techs: [],
     },
     {
