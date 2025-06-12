@@ -119,7 +119,7 @@ const blue: Project = {
 const pejuangOsn: Project = {
   img: pejuangOsnImage,
   name: 'Pejuang OSN',
-  description: 'E-learning platform by PT. Pejuang Indonesia Cerdas for students to prepare for the National Science Olympiad with features like masterclass, quiz, and exam-question bank',
+  description: 'E-learning platform by PT Pejuang Indonesia Cerdas for students to prepare for the National Science Olympiad with features like masterclass, quiz, and exam-question bank',
   techs: [nextjs, typeScript, tailwind],
   url: 'https://pejuangosn.com',
 }
