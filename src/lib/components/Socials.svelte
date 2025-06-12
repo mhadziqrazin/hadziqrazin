@@ -6,7 +6,7 @@
   import SiGmail from "svelte-icons-pack/si/SiGmail"
   import BsFileEarmarkPdf from "svelte-icons-pack/bs/BsFileEarmarkPdf"
   import { fly } from "svelte/transition"
-  import resume from '$lib/assets/12_06_2025_Resume_Muhammad_HADZIQ_Razin.pdf'
+  import resume from '$lib/assets/Resume_Muhammad_HADZIQ_Razin.pdf'
 </script>
 
 <div class="w-1/2 flex self-center justify-between lg:justify-around">
