@@ -38,22 +38,20 @@
     
       <!-- DESCRIPTION -->
       <p in:fade={{duration: 1000, delay: 200}} class="text-base/7 lg:text-2xl/9 font-medium text-dark/80">
+        &bullet;a <span class="text-dark/90 font-semibold">Front-end Engineer</span> at
+        <a href="https://spun.global" target="_blank" rel="noreferrer" class="underline decoration-[1.5px] md:decoration-[2.2px]">
+          SPUN</a>.<br />
     
-        &bullet;a final year undergraduate
+        &bullet;a fresh graduate in
     
-        <a href="https://cs.ui.ac.id" target="_blank" class="underline decoration-[1.5px] md:decoration-[2.2px]">
+        <a href="https://cs.ui.ac.id" target="_blank" rel="noreferrer" class="underline decoration-[1.5px] md:decoration-[2.2px]">
           Computer Science
         </a>
-    
-        student at the
-    
-        <a href="https://ui.ac.id" target="_blank" class="underline decoration-[1.5px] md:decoration-[2.2px]">
-          University of Indonesia</a>,
     
         who's passionate about
         <span class="text-dark/90 font-semibold">software engineering</span>.<br/>
         &bullet;an
-        <span class="text-dark/90 font-semibold">Ex-UX Engineer Intern</span>
+        <span class="text-dark/90 font-semibold">Ex-<a href="https://blue.blibli.com" target="_blank" class="text-dark/90 font-semibold underline decoration-[1.5px] md:decoration-[2.2px]">UX Engineer</a> Intern</span>
         at
 
         <a href="https://blibli.com" target="_blank" class="underline decoration-[1.5px] md:decoration-[2.2px]">
