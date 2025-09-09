@@ -1,0 +1,35 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "/_app/immutable/.+",
+			"headers": {
+				"cache-control": "public, immutable, max-age=31536000"
+			}
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "^/?(?:/__data.json)?$",
+			"dest": "/"
+		},
+		{
+			"src": "^/life/?(?:/__data.json)?$",
+			"dest": "/life"
+		},
+		{
+			"src": "^/projects/?(?:/__data.json)?$",
+			"dest": "/projects"
+		},
+		{
+			"src": "^/works/?(?:/__data.json)?$",
+			"dest": "/works"
+		},
+		{
+			"src": "/.*",
+			"dest": "/![-]/catchall"
+		}
+	],
+	"overrides": {}
+}
