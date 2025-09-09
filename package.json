@@ -2,9 +2,6 @@
 	"name": "hadziqrazin",
 	"version": "0.0.1",
 	"private": true,
-	"engines": {
-		"node": ">=22"
-	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -17,7 +14,7 @@
 		"@sveltejs/kit": "^2.37.1",
 		"autoprefixer": "^10.4.15",
 		"postcss": "^8.4.29",
-		"svelte": "^4.0.5",
+		"svelte": "^5.38.7",
 		"svelte-check": "^3.4.3",
 		"svelte-loading-spinners": "^0.3.4",
 		"tailwindcss": "^3.3.3",
