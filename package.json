@@ -1,7 +1,10 @@
 {
 	"name": "hadziqrazin",
-	"version": "0.0.1",
-	"private": true,
+  "version": "0.0.1",
+  "engines": {
+    "node": "22.x"
+  },
+  "private": true,
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
