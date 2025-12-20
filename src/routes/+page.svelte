@@ -41,6 +41,13 @@
         &bullet;a <span class="text-dark/90 font-semibold">Front-end Engineer</span> at
         <a href="https://spun.global" target="_blank" rel="noreferrer" class="underline decoration-[1.5px] md:decoration-[2.2px]">
           SPUN</a>.<br />
+
+        &bullet;an
+        <span class="text-dark/90 font-semibold">Ex-<a href="https://blue.blibli.com" target="_blank" class="text-dark/90 font-semibold underline decoration-[1.5px] md:decoration-[2.2px]">UX Engineer</a> Intern</span>
+        at
+
+        <a href="https://blibli.com" target="_blank" class="underline decoration-[1.5px] md:decoration-[2.2px]">
+          Blibli</a>.<br/>
     
         &bullet;a fresh graduate in
     
@@ -49,13 +56,7 @@
         </a>
     
         who's passionate about
-        <span class="text-dark/90 font-semibold">software engineering</span>.<br/>
-        &bullet;an
-        <span class="text-dark/90 font-semibold">Ex-<a href="https://blue.blibli.com" target="_blank" class="text-dark/90 font-semibold underline decoration-[1.5px] md:decoration-[2.2px]">UX Engineer</a> Intern</span>
-        at
-
-        <a href="https://blibli.com" target="_blank" class="underline decoration-[1.5px] md:decoration-[2.2px]">
-          Blibli</a>.
+        <span class="text-dark/90 font-semibold">software engineering</span>.
       </p>
 
       <!-- PAGES -->
