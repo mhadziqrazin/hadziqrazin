@@ -4,6 +4,7 @@ import cssImage from '$lib/assets/life/css.png'
 import meetTheCastImage from '$lib/assets/life/meet-the-cast.jpg'
 import aDayInMyLifeImage from '$lib/assets/life/a-day-in-my-life.png'
 import gameMasterImage from '$lib/assets/life/game-master.jpg'
+import volunteerImage from '$lib/assets/life/volunteer.jpg'
 
 
 export const pemburu: Project = {
@@ -46,6 +47,14 @@ export const gameMaster: Project = {
   url: 'https://www.instagram.com/bliblidesign/reel/DEM5BGfJm8S/'
 }
 
+export const volunteer: Project = {
+  img: volunteerImage,
+  name: 'Volunteering',
+  description: "A vlog I made during a volunteering event at Loloan Village, North Lombok. I'm open to volunteering opportunities because I simply love putting smiles on others :)",
+  techs: [],
+  url: 'https://youtu.be/Au0HtHMGHiQ?si=Wzrh9aKoXDn9SMzk'
+}
+
 export const life: Project[] = [
-  gameMaster, css, pemburu, aDayInMyLife, meetTheCast
+  volunteer, gameMaster, css, pemburu, aDayInMyLife, meetTheCast
 ]
